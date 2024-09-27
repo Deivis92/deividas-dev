@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+body {
+  background: linear-gradient(
+    174.25deg,
+    #0b042d 24.9%,
+    #1f0b80 39.2%,
+    #0b042f 72.02%,
+    #241085 106.54%
+  );
+  margin: 0;
+
+  padding: 0;
+  height: 100vh; /* Ensures the gradient covers the full viewport height */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Makes the background fixed while scrolling */
+  
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+
+  box-sizing: border-box;
+}
