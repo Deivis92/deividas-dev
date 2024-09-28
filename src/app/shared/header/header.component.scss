@@ -1,29 +1,65 @@
 header {
-    color:  rgba(225, 85, 68, 1);
-    display: flex;
-    justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    width: 100%;
-
+  color: rgba(225, 85, 68, 1);
+  display: flex;
+ 
+  font-weight: 500;
+  justify-content: space-between;
+  padding: 24px 140px; // Add 140px padding to the left and right
+  width: 100%;
+  box-sizing: border-box; // Ensure padding does not add to the width, preventing overflow
 }
-
 
 .header-left {
-    display: flex;
-    
-  
+  display: flex;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    ul {
-        cursor: pointer;
+  a {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32px;
+    transition: color 100ms ease-out;
+    
+    &:hover {
+      color: rgba(2, 244, 191, 1);
+  
     }
+  }
+
+
+  img  {
+    width: 92;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
 }
 .header-right {
-    display: flex;
-    margin-right: 140px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
 
-    ul {
-        cursor: pointer;
-    }
+  p {
+    cursor: pointer;
+    transition: color 100ms ease-out;
+
+    &:hover {
+        color: rgba(2, 244, 191, 1);
+    
+      }
+  }
+
+  .separator {
+    margin: 0 6px; // Adjust the value as needed for spacing
+  }
+
 }
+

@@ -1,3 +1,11 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 @font-face {
   font-family: "Roboto-Mono-Medium"; /* The name you want to give the font */
   src: url("../public/assets/fonts/roboto-mono/RobotoMono-Medium.ttf")
@@ -20,13 +28,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Roboto-Mono-Medium", sans-serif;
-  display: flex;
-  justify-content: center;
 }
 
 .container {
   width: 100%;
   max-width: 1440px;
-
+  margin: 0 auto;
   box-sizing: border-box;
 }
