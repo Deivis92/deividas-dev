@@ -1,0 +1,29 @@
+header {
+    color:  rgba(225, 85, 68, 1);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+
+}
+
+
+.header-left {
+    display: flex;
+    
+  
+
+    ul {
+        cursor: pointer;
+    }
+}
+.header-right {
+    display: flex;
+    margin-right: 140px;
+  
+
+    ul {
+        cursor: pointer;
+    }
+}
