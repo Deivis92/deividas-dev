@@ -1,0 +1,76 @@
+@import "../../../../public/styles/mixins.scss";
+
+.about-me {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.content-left {
+  display: flex;
+ 
+  flex-direction: column;
+  justify-content: space-around;
+
+  .buttons {
+    display: flex;
+  }
+}
+.arrow {
+    padding: 4px;
+    @include flex-center;
+    cursor: pointer;
+    border: 1px solid transparent; // Set a transparent border by default
+  
+    &:hover {
+      border: 1px solid rgba(2, 244, 191, 1); // Change the border color on hover
+    }
+  }
+
+.name-title {
+  color: rgba(2, 244, 191, 1);
+
+  h2 {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-size: 54px;
+    font-weight: 500;
+  }
+
+  h1 {
+    font-size: 82px;
+    font-weight: 700;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    white-space: nowrap; 
+  
+  }
+}
+
+.content-right {
+ 
+
+  img {
+    width: 550px;
+  }
+}
+
+.contact-me-btn {
+  all: unset;
+  color: rgba(225, 85, 68, 1);
+  font-weight: 500;
+  font-size: 18px;
+  border: 1px solid rgba(2, 244, 191, 1);
+  padding: 15px 30px 15px 30px;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  transition: color 100ms ease-out;
+  margin-left: -56px;
+
+  &:hover {
+    color: rgba(2, 244, 191, 1);
+  }
+}

@@ -1,7 +1,9 @@
+@import "../../../../public/styles/mixins.scss";
+
 header {
   color: rgba(225, 85, 68, 1);
   display: flex;
- 
+
   font-weight: 500;
   justify-content: space-between;
   padding: 24px 140px; // Add 140px padding to the left and right
@@ -12,38 +14,27 @@ header {
 .header-left {
   display: flex;
   font-size: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 
   a {
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 32px;
     transition: color 100ms ease-out;
-    
+
     &:hover {
       color: rgba(2, 244, 191, 1);
-  
     }
   }
 
-
-  img  {
+  img {
     width: 92;
     height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     cursor: pointer;
   }
 }
 .header-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   font-size: 18px;
   font-weight: 700;
 
@@ -52,14 +43,11 @@ header {
     transition: color 100ms ease-out;
 
     &:hover {
-        color: rgba(2, 244, 191, 1);
-    
-      }
+      color: rgba(2, 244, 191, 1);
+    }
   }
 
   .separator {
-    margin: 0 6px; // Adjust the value as needed for spacing
+    margin: 0 6px;
   }
-
 }
-
