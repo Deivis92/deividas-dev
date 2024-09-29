@@ -28,11 +28,15 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Roboto-Mono-Medium", sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  margin-left: 140px;
+  margin-right: 140px;
   box-sizing: border-box;
 }
