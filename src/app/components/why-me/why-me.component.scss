@@ -4,12 +4,28 @@
     width: 100%;
     display: flex; // Use flexbox to layout children
   overflow: hidden; // Prevent overflow if content exceeds the max height
+
+  h1 {
+    font-size: 54px;
+    color: rgba(225, 85, 68, 1);
+    text-align: right;
+    margin-right: 140px;
+    margin-block-end: 0;
+    
+  }
+  .p-why-me {
+    text-align: right;
+    margin-right: 140px;
+    color: rgba(2, 244, 191, 1);
+    font-size: 16px;
+
+  }
  
 }
 
 .photo-left {
     flex: 1;
-    @include flex-center;
+    width: 30%;
     
 
     img {
@@ -17,4 +33,40 @@
         max-height: 100%; // Prevent the image from exceeding the height of its container
         object-fit: cover; // Maintain aspect ratio while covering the area
     }
+}
+
+.text-div {
+    width: 70%;
+}
+
+.i-am {
+
+    
+    
+   h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: rgba(225, 85, 68, 1);
+   }
+
+   p {
+    color: rgba(2, 244, 191, 1);
+    font-size: 18px;
+   }
+
+   .top {
+    display: flex;
+   }
+   
+
+   .location {
+    @include flex-center;
+    gap: 12px;
+
+    img {
+        height: 41px;
+    }
+   }
+
+
 }
