@@ -9,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class WhyMeComponent {
 
+  kofferImageUrl: string = './assets/icons/koffer.png';
+  remoteImageUrl: string = '../assets/icons/WiFi.png';
+
+  onKofferHover(isHovered: boolean) {
+    this.kofferImageUrl = isHovered ? './assets/icons/koffer-2.png' : './assets/icons/koffer.png';
+  }
+
+  // Hover methods for Remote image
+  onRemoteHover(isHovered: boolean) {
+    this.remoteImageUrl = isHovered ? './assets/icons/WiFi2.png' : './assets/icons/WiFi.png';
+  }
+
 }

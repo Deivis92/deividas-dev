@@ -1,8 +1,8 @@
 @import "../../../../public/styles/mixins.scss";
 
 .why-me-container {
-    width: 100%;
-    display: flex; // Use flexbox to layout children
+  width: 100%;
+  display: flex; // Use flexbox to layout children
   overflow: hidden; // Prevent overflow if content exceeds the max height
 
   h1 {
@@ -11,62 +11,158 @@
     text-align: right;
     margin-right: 140px;
     margin-block-end: 0;
-    
   }
   .p-why-me {
     text-align: right;
     margin-right: 140px;
     color: rgba(2, 244, 191, 1);
     font-size: 16px;
-
   }
- 
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 .photo-left {
-    flex: 1;
-    width: 30%;
-    
+  flex: 1;
+  width: 30%;
+  background-image: url("../../../../public/assets/img/temporar-why.png");
+  object-fit: cover; /* Adjusts the size to cover the entire element */
+  background-position: center; /* Centers the image */
 
-    img {
-        max-width: 100%; // Prevent the image from exceeding the width of its container
-        max-height: 100%; // Prevent the image from exceeding the height of its container
-        object-fit: cover; // Maintain aspect ratio while covering the area
-    }
+  img {
+    max-width: 100%; // Prevent the image from exceeding the width of its container
+    max-height: 100%; // Prevent the image from exceeding the height of its container
+    object-fit: cover; // Maintain aspect ratio while covering the area
+  }
 }
 
 .text-div {
-    width: 70%;
+  width: 70%;
 }
 
 .i-am {
+  position: relative;
+  width: 100%;
 
-    
-    
-   h2 {
+  h2 {
     font-size: 48px;
     font-weight: 700;
     color: rgba(225, 85, 68, 1);
-   }
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
 
-   p {
+  p {
     color: rgba(2, 244, 191, 1);
     font-size: 18px;
-   }
+  }
 
-   .top {
+  .top {
     display: flex;
-   }
+    justify-content: space-evenly;
+    width: 568px;
+    margin-left: 212px;
+
+    .ring-size {
+      width: 19px;
+      height: 7px;
+      display: none;
+    }
+
+    .hover-img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .location {
+      @include flex-center;
+      gap: 12px;
+
+      .vector-size {
+        height: 41px;
+        transition: transform 120ms ease-in-out;
+      }
+      &:hover .vector-size {
+        transform: translateY(-2px); // Moves the image 2 pixels up
+      }
+
+      &:hover .ring-size {
+        display: block;
+      }
+    }
+  }
+
+  .content-right-div {
+    width: 100%;
+  }
+
+  .middle-div {
+    display: flex;
+    width: 568px;
+    gap: 156px;
+    margin-left: 450px;
+
+    .koffer-size {
+      width: 30px;
+      height: 49px;
+      transition: transform 120ms ease-in-out;
+    }
+
+    .arrow-down-size {
+      height: 56px;
+    }
+
+    .koffer-text-div {
+      display: flex;
+      @include flex-center;
+      gap: 12px;
+
+      &:hover .koffer-size {
+        transform: scale(1.05); // Slightly scale up the image on hover
+      }
+    }
+  }
+
+  .bottom {
+    width: 568px;
+    display: flex;
+    align-items: center;
+    margin-left: 479px;
+  }
+
+  .elements-left {
+    display: flex;
+    @include flex-center;
+
+    p {
+      margin-left: 12px;
+      margin-right: 16px;
+    }
+  }
+  .arrow-to-button {
+    margin-left: 225px;
+  }
+
+  .remote-size {
+    width: 37px;
+    
+    transition: transform 120ms ease-in-out;
+  }
+
+  .wifi-symbol {
+    margin-bottom: 20px;
+    margin-right: -11px;
+    width: 21px;
    
 
-   .location {
-    @include flex-center;
-    gap: 12px;
-
-    img {
-        height: 41px;
+    &:hover {
+      
+        transform: scale(1.1) translate(-5px, -5px); /* Scale and move left/up */
+    
     }
-   }
-
-
+  }
 }

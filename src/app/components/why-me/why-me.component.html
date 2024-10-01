@@ -1,6 +1,6 @@
 <div class="why-me-container">
   <div class="photo-left">
-    <img src="./assets/img/temporar-why.png" alt="" />
+    <!-- <img src="./assets/img/temporar-why.png" alt="" /> -->
   </div>
 
   <div class="text-div">
@@ -12,20 +12,49 @@
         make me a valuable member of your team.
       </p>
     </div>
-    
+
     <div class="i-am">
+      <div class="content-right-div">
+        
+        
         <div class="top">
-            <h2>I am</h2>
-            <div class="location">
-                <img src="./assets/icons/Vector1.png" alt="">
-                <p>located<br>in Bremerhaven</p>
+          <h2>I am</h2>
+          <div class="location">
+            <div class="hover-img"><img class="vector-size" src="./assets/icons/Vector1.png" alt="" />
+              <img class="ring-size" src="/assets/icons/ring-2.png" alt="">
+
             </div>
+            <p>located<br />in Bremerhaven</p>
+          </div>
         </div>
+
+        <div class="middle-div">
+          
+          <img class="arrow-down-size" src="./assets/icons/Arrow-down.png" alt="" />
+          <div class="koffer-text-div" (mouseenter)="onKofferHover(true)" (mouseleave)="onKofferHover(false)">
+            <img class="koffer-size" [src]="kofferImageUrl" alt="" />
+            <p>open to<br>relocate</p>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="elements-left" (mouseenter)="onRemoteHover(true)" (mouseleave)="onRemoteHover(false)">
+            <div>
+              <img class="wifi-symbol" [src]="remoteImageUrl" alt="" />
+              <img class="remote-size" src="./assets/icons/remote.png" alt="" />
+             </div>
+          <p>open to<br>work remote</p>
+          <img src="./assets/icons/ArrowUp.png" alt="">
+        </div>
+          <img class="arrow-to-button" src="./assets/icons/arrow-to-button.png" alt="">
+
+        </div>
+
+
+
+
+
+      </div>
     </div>
-
-
-
-
-
   </div>
 </div>
