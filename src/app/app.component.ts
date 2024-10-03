@@ -4,11 +4,12 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { WhyMeComponent } from './components/why-me/why-me.component';
+import { MySkillsComponent } from './components/my-skills/my-skills.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, AboutMeComponent, WhyMeComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, AboutMeComponent, WhyMeComponent, MySkillsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

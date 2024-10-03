@@ -4,17 +4,16 @@
   width: 100%;
   display: flex; // Use flexbox to layout children
   overflow: hidden; // Prevent overflow if content exceeds the max height
+  margin-bottom: 100px;
 
   h1 {
     font-size: 54px;
     color: rgba(225, 85, 68, 1);
     text-align: right;
-    margin-right: 140px;
     margin-block-end: 0;
   }
   .p-why-me {
     text-align: right;
-    margin-right: 140px;
     color: rgba(2, 244, 191, 1);
     font-size: 16px;
   }
@@ -27,7 +26,7 @@
 
 .photo-left {
   flex: 1;
-  width: 30%;
+  width: 40%;
   background-image: url("../../../../public/assets/img/temporar-why.png");
   object-fit: cover; /* Adjusts the size to cover the entire element */
   background-position: center; /* Centers the image */
@@ -40,7 +39,7 @@
 }
 
 .text-div {
-  width: 70%;
+  width: 60%;
 }
 
 .i-am {
@@ -65,6 +64,7 @@
     justify-content: space-evenly;
     width: 568px;
     margin-left: 212px;
+    cursor: default;
 
     .ring-size {
       width: 19px;
@@ -105,6 +105,8 @@
     width: 568px;
     gap: 156px;
     margin-left: 450px;
+    margin-bottom: -8px;
+    cursor: default;
 
     .koffer-size {
       width: 30px;
@@ -128,10 +130,12 @@
   }
 
   .bottom {
-    width: 568px;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-left: 479px;
+    justify-content: flex-end;
+
+    cursor: default;
   }
 
   .elements-left {
@@ -144,25 +148,28 @@
     }
   }
   .arrow-to-button {
-    margin-left: 225px;
+    margin-left: 110px;
   }
 
   .remote-size {
     width: 37px;
-    
-    transition: transform 120ms ease-in-out;
+
+    transition: transform 100ms ease-in-out;
   }
 
   .wifi-symbol {
     margin-bottom: 20px;
     margin-right: -11px;
-    width: 21px;
-   
-
-    &:hover {
-      
-        transform: scale(1.1) translate(-5px, -5px); /* Scale and move left/up */
-    
-    }
+    width: 36px;
   }
+
+  .change-wifi-symbol {
+    margin-bottom: 22px;
+  }
+}
+
+.button-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
 }

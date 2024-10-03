@@ -41,3 +41,16 @@ body {
   box-sizing: border-box;
 }
 
+.eletric-button {
+  all: unset;
+  background-color: rgba(2, 244, 191, 1);
+  padding: 15px 30px;
+  color: rgba(11, 4, 45, 1);
+  cursor: pointer;
+  transition: color 300ms ease-in-out;
+
+  &:hover {
+    color: rgba(225, 85, 68, 1);
+  }
+}
+
