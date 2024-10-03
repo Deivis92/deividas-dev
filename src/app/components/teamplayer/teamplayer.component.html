@@ -1,0 +1,18 @@
+<div class="teamplayer">
+  <h3>Need a team player? Here's what my colleagues said about me</h3>
+
+  <div class="comments">
+    <img
+      class="arrow-img"
+      src="./assets/icons/teamArrow.png"
+      alt="Team Arrow Icon"
+    />
+    <div class="comments-div">
+      <div class="comment-list" *ngFor="let comment of comments">
+        <h4>{{ comment.name }}</h4>
+        <p class="title">{{ comment.title }}</p>
+        <p>''{{ comment.description }}''</p>
+      </div>
+    </div>
+  </div>
+</div>

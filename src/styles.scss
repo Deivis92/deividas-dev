@@ -47,10 +47,26 @@ body {
   padding: 15px 30px;
   color: rgba(11, 4, 45, 1);
   cursor: pointer;
+  font-size: 18px;
   transition: color 300ms ease-in-out;
 
   &:hover {
     color: rgba(225, 85, 68, 1);
+  }
+}
+
+.git-hub-btn {
+  all: unset;
+  box-sizing: border-box;
+  padding: 14px 29px;
+  color: rgba(225, 85, 68, 1);
+  border: 1px solid rgba(2, 244, 191, 1);
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 300ms ease-in-out;
+
+  &:hover {
+    color: rgba(2, 244, 191, 1);
   }
 }
 

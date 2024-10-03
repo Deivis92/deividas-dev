@@ -1,7 +1,59 @@
+@import "../../../../public/styles/mixins.scss";
+
+.my-skills {
+  margin-bottom: 100px;
+  overflow: hidden;
+}
 
 h1 {
-    font-size: 54px;
-    color: rgba(225, 85, 68, 1);
+  font-size: 54px;
+  color: rgba(225, 85, 68, 1);
+  text-align: left;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-bottom: 28px;
+}
+
+.skills-container-first {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 40px;
+}
+.skills-container-second {
+  display: flex;
+  gap: 100px;
+}
+
+.skills-positioning {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-size {
+  height: 150px;
+  width: 150px;
+  @include flex-center;
+  flex: 1;
+}
+
+.ready-to-learn {
+  margin-left: -56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 300ms ease-in-out;
+
+  p {
     text-align: left;
-    margin-block-end: 0;
+    color: rgb(2, 244, 191);
+    font-size: 16px;
   }
+}
+
+.challenge-me img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.challenge-me:hover img {
+  transform: translateY(5px);
+}
