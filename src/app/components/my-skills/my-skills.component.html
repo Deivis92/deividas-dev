@@ -1,13 +1,17 @@
 <div class="my-skills">
-    <h1>My Skills</h1>
+  <h1>My Skills</h1>
 
+  <div class="skills-positioning">
+    <div class="skills-container-first">
+      <div *ngFor="let imageUrl of skillImagesFirstRow">
+        <img class="img-size" [src]="imageUrl" alt="Skill image" />
+      </div>
+    </div>
 
-
-
-
-
-
-
-
-
+    <div class="skills-container-second">
+      <div *ngFor="let imageUrl of skillImagesSecondRow">
+        <img class="img-size" [src]="imageUrl" alt="Skill image" />
+      </div>
+    </div>
+  </div>
 </div>
