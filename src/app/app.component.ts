@@ -7,11 +7,12 @@ import { WhyMeComponent } from './components/why-me/why-me.component';
 import { MySkillsComponent } from './components/my-skills/my-skills.component';
 import { MyProjectsComponent } from './components/my-projects/my-projects.component';
 import { TeamplayerComponent } from './components/teamplayer/teamplayer.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, AboutMeComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, TeamplayerComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, AboutMeComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, TeamplayerComponent, ContactMeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,0 +1,52 @@
+@import "../../../../public/styles/mixins.scss";
+
+.contact {
+  h1 {
+    font-size: 54px;
+    color: rgba(225, 85, 68, 1);
+    text-align: left;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-bottom: 28px;
+
+    img {
+      margin-left: -15px;
+      margin-bottom: -10px;
+    }
+  }
+
+  .text-divs {
+    width: 100%;
+    display: flex;
+
+    .left {
+      width: 50%;
+    }
+
+    .right {
+      width: 50%;
+
+      a {
+        all: unset;
+      }
+
+      .email,
+      .phone {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        cursor: pointer;
+
+        svg:hover path {
+          fill: rgba(2, 244, 191, 1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 18px;
+    color: rgba(2, 244, 191, 1);
+  }
+}

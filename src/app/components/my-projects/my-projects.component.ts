@@ -26,7 +26,7 @@ export class MyProjectsComponent {
       skills: ['JavaScript', 'HTML', 'CSS'],
       description: 'Jump, run and throw game based on object-\noriented approach. Help Pepe to find coins\nand tabasco salsa to fight against the crazy\nhen.',
       githubLink: 'https://github.com/user/project-two',
-      websiteLink: 'https://project-two.com'
+      websiteLink: 'https://deividas-kondratjevas.developerakademie.net/elPolloLocoDeivis/index.html'
     },
 
   ];
