@@ -50,3 +50,63 @@
     color: rgba(2, 244, 191, 1);
   }
 }
+
+.up-arrow {
+  width: 22px;
+  height: 50px;
+  padding: 8px 6px;
+  @include flex-center;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, fill 300ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 0 1px rgba(2, 244, 191, 1);
+
+    path {
+      fill: #02f4bf;
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  .contact-block {
+    display: flex;
+  }
+
+  .inputs-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    input {
+      width: 90%;
+      all: unset;
+      border: 1px solid #02f4bf;
+      padding: 15px 9px; 
+      color: #02f4bf;
+
+
+      &::placeholder {
+        font-size: 18px;
+        color: rgba(2, 244, 191, 0.6);
+      }
+
+      &:focus {
+        animation: none;
+        
+      }
+       
+        
+    }
+  }
+
+
+  .text-area {
+    
+    
+   
+  }
+}

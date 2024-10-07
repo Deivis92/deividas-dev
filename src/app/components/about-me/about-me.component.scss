@@ -28,6 +28,7 @@
   position: absolute;
   right: 0;
   bottom: -100px;
+  transition: border 300ms ease-in-out, fill 300ms ease-in-out;
 
   &:hover {
     border: 1px solid rgba(2, 244, 191, 1);
