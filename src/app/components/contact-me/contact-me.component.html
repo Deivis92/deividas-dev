@@ -64,34 +64,43 @@
 
   <form>
     <div class="contact-block">
-    <div class="inputs-left">
-      <input
-        type="text"
-        name="name"
-        id="your-name"
-        required
-        placeholder="Your Name"
-      />
+      <div class="inputs-left">
+        <input
+          type="text"
+          name="name"
+          id="your-name"
+          required
+          placeholder="Your Name"
+        />
 
-      <input
-        type="email"
-        id="email"
-        name="email"
-        required
-        placeholder="Your Email"
-      />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Your Email"
+        />
+      </div>
+      <div class="text-area">
+        <textarea
+          required
+          id="subject"
+          name="subject"
+          placeholder="Your Message"
+        ></textarea>
+      </div>
     </div>
-    <div class="text-area">
-    <textarea
-      required
-      id="subject"
-      name="subject"
-      placeholder="Your Message"
-    ></textarea>
-  </div>
 
-  </div>
+    <div class="checkbox">
+      <div class="centering">
+        <input type="checkbox" id="accept-policy" />
+        <label for="accept-policy">
+          I've read the <a href="#">privacy policy</a> and agree to the
+          processing of my data as outlined.
+        </label>
+      </div>
 
-    <!-- <button type="submit" value="Submit">Submit</button> -->
+      <div class="position-button"><button class="git-hub-btn " type="submit" value="Submit" disabled>Send</button></div>
+    </div>
   </form>
 </div>
