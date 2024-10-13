@@ -62,10 +62,11 @@
     </svg>
   </div>
 
-  <form>
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
     <div class="contact-block">
       <div class="inputs-left">
         <input
+          [(ngModel)]="contactData.name"
           type="text"
           name="name"
           id="your-name"
@@ -74,7 +75,9 @@
         />
 
         <input
+          [(ngModel)]="contactData.email"
           type="email"
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
           id="email"
           name="email"
           required
@@ -83,6 +86,8 @@
       </div>
       <div class="text-area">
         <textarea
+          [(ngModel)]="contactData.message"
+          minlength="10"
           required
           id="subject"
           name="subject"
@@ -100,7 +105,11 @@
         </label>
       </div>
 
-      <div class="position-button"><button class="git-hub-btn " type="submit" value="Submit" disabled>Send</button></div>
+      <div class="position-button">
+        <button class="git-hub-btn" type="submit" value="Submit">
+          Send
+        </button>
+      </div>
     </div>
   </form>
 </div>
