@@ -1,6 +1,41 @@
 @import "../../../../public/styles/mixins.scss";
 
 .contact {
+
+
+
+  input.valid,
+  input.invalid,
+  textarea.valid,
+  textarea.invalid {
+   
+
+
+
+    &.invalid::placeholder {
+      color: rgba(249, 33, 3, 1);
+      font-size: 14px;
+      font-weight: 200;
+
+    }
+
+      
+
+    &.valid {
+      font-size: 14px;
+      font-weight: 200;
+      color: rgba(97, 225, 6, 1);
+    }
+  }
+
+  // Styles for error messages
+  .error-message {
+    color: rgba(225, 85, 68, 1); // Red color for error messages
+    font-size: 14px; // Font size for error messages
+    margin-top: 4px; // Space between input and error message
+  }
+
+
   h1 {
     font-size: 54px;
     color: rgba(225, 85, 68, 1);
@@ -101,6 +136,8 @@ form {
       &:focus {
         caret-color: 1px solid rgba(2, 244, 191, 0.6);
       }
+
+   
     }
   }
 

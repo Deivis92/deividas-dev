@@ -71,7 +71,14 @@
           name="name"
           id="your-name"
           required
-          placeholder="Your Name"
+          #name="ngModel"
+          [ngClass]="{
+            invalid: name.invalid && name.touched,
+            valid: name.valid
+          }"
+          [placeholder]="
+            name.invalid && name.touched ? 'Name is required' : 'Your Name'
+          "
         />
 
         <input
@@ -81,7 +88,12 @@
           id="email"
           name="email"
           required
-          placeholder="Your Email"
+          #email="ngModel"
+          [ngClass]="{
+            invalid: email.invalid && email.touched,
+            valid: email.valid
+          }"
+          [placeholder]="email.invalid && email.touched ? (email.errors?.['pattern'] ? 'Enter a valid email' : 'Email is required') : 'Your Email'"
         />
       </div>
       <div class="text-area">
@@ -91,14 +103,19 @@
           required
           id="subject"
           name="subject"
-          placeholder="Your Message"
+          #message="ngModel"
+          [ngClass]="{
+            invalid: message.invalid && message.touched,
+            valid: message.valid
+          }"
+          [placeholder]="message.invalid && message.touched ? (message.errors?.['minlength'] ? 'Message must be at least 10 characters' : 'Message is required') : 'Your Message'"
         ></textarea>
       </div>
     </div>
 
     <div class="checkbox">
       <div class="centering">
-        <input type="checkbox" id="accept-policy" />
+        <input type="checkbox" id="accept-policy" required />
         <label for="accept-policy">
           I've read the <a href="#">privacy policy</a> and agree to the
           processing of my data as outlined.
@@ -106,7 +123,12 @@
       </div>
 
       <div class="position-button">
-        <button class="git-hub-btn" type="submit" value="Submit">
+        <button
+          class="git-hub-btn"
+          type="submit"
+          [disabled]="contactForm.invalid"
+          value="Submit"
+        >
           Send
         </button>
       </div>
