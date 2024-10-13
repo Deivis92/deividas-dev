@@ -1,33 +1,22 @@
 @import "../../../../public/styles/mixins.scss";
 
 .contact {
-
-
+  margin-bottom: 120px;
 
   input.valid,
   input.invalid,
   textarea.valid,
   textarea.invalid {
-   
-
-
-
     &.invalid::placeholder {
       color: rgba(249, 33, 3, 1);
-     
       font-weight: 200;
-
     }
-
 
     &.invalid {
       color: rgba(249, 33, 3, 1);
     }
 
-      
-
     &.valid {
-     
       font-weight: 200;
       color: rgba(97, 225, 6, 1);
     }
@@ -35,14 +24,14 @@
 
   .input-container {
     position: relative;
-    width: 100%; // Stelle sicher, dass das Container die Breite des Inputs hat
-  
+    width: 100%;
+
     input,
     textarea {
-      width: 90%; // Breite der Eingabefelder
-      padding-right: 23px; // Platz für das Bild
+      width: 90%;
+      padding-right: 23px;
     }
-  
+
     .input-icon {
       position: absolute;
       right: 40px;
@@ -64,8 +53,6 @@
       margin-right: 7px;
     }
   }
-
-
 
   h1 {
     font-size: 54px;
@@ -167,8 +154,6 @@ form {
       &:focus {
         caret-color: 1px solid rgba(2, 244, 191, 0.6);
       }
-
-   
     }
   }
 
@@ -177,6 +162,7 @@ form {
     display: flex;
     flex: 1;
   }
+
   textarea {
     width: 95% !important;
     height: 112px !important;
@@ -184,6 +170,7 @@ form {
     border: 1px solid #02f4bf;
     padding: 15px 9px;
     color: #02f4bf;
+
     &::placeholder {
       font-size: 18px;
       color: rgba(2, 244, 191, 0.6);
@@ -201,9 +188,9 @@ form {
     margin-top: 20px;
 
     .error-message {
-      color: red;  // Change to your preferred error color
+      color: red;
       margin-top: 8px;
-      font-size: 14px;  // Adjust the font size as needed
+      font-size: 14px;
     }
 
     .centering {
@@ -270,7 +257,6 @@ form {
 
   .git-hub-btn {
     margin-right: 0px;
-    
   }
 
   .git-hub-btn:disabled {
