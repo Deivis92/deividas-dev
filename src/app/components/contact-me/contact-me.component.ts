@@ -11,6 +11,8 @@ import { FormsModule, NgForm } from '@angular/forms';
 })
 export class ContactMeComponent {
 
+ 
+
   contactData = {
     name: "",
     email: "",

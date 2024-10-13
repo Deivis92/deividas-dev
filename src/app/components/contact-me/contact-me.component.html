@@ -65,54 +65,80 @@
   <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
     <div class="contact-block">
       <div class="inputs-left">
-        <input
-          [(ngModel)]="contactData.name"
-          type="text"
-          name="name"
-          id="your-name"
-          required
-          #name="ngModel"
-          [ngClass]="{
-            invalid: name.invalid && name.touched,
-            valid: name.valid
-          }"
-          [placeholder]="
-            name.invalid && name.touched ? 'Name is required' : 'Your Name'
-          "
-        />
-
-        <input
-          [(ngModel)]="contactData.email"
-          type="email"
-          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-          id="email"
-          name="email"
-          required
-          #email="ngModel"
-          [ngClass]="{
-            invalid: email.invalid && email.touched,
-            valid: email.valid
-          }"
-          [placeholder]="email.invalid && email.touched ? (email.errors?.['pattern'] ? 'Enter a valid email' : 'Email is required') : 'Your Email'"
-        />
+        <div class="input-container">
+          <input
+            [(ngModel)]="contactData.name"
+            type="text"
+            name="name"
+            id="your-name"
+            minlength="2"
+            required
+            #name="ngModel"
+            [ngClass]="{
+              invalid: name.invalid && name.touched,
+              valid: name.valid
+            }"
+            [placeholder]="
+              name.invalid && name.touched ? 'Name is required' : 'Your Name'
+            "
+          />
+          <img
+            *ngIf="name.touched"
+            [src]="name.valid ? './assets/icons/valid.svg' : './assets/icons/invalid.svg'"
+            class="input-icon"
+            alt="Input Status"
+          />
+        </div>
+  
+        <div class="input-container">
+          <input
+            [(ngModel)]="contactData.email"
+            type="email"
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            id="email"
+            name="email"
+            required
+            #email="ngModel"
+            [ngClass]="{
+              invalid: email.invalid && email.touched,
+              valid: email.valid
+            }"
+            [placeholder]="email.invalid && email.touched ? (email.errors?.['pattern'] ? 'Enter a valid email' : 'Email is required') : 'Your Email'"
+          />
+          <img
+            *ngIf="email.touched"
+            [src]="email.valid ? './assets/icons/valid.svg' : './assets/icons/invalid.svg'"
+            class="input-icon"
+            alt="Input Status"
+          />
+        </div>
       </div>
+      
       <div class="text-area">
-        <textarea
-          [(ngModel)]="contactData.message"
-          minlength="10"
-          required
-          id="subject"
-          name="subject"
-          #message="ngModel"
-          [ngClass]="{
-            invalid: message.invalid && message.touched,
-            valid: message.valid
-          }"
-          [placeholder]="message.invalid && message.touched ? (message.errors?.['minlength'] ? 'Message must be at least 10 characters' : 'Message is required') : 'Your Message'"
-        ></textarea>
+        <div class="input-container">
+          <textarea
+            [(ngModel)]="contactData.message"
+            minlength="10"
+            required
+            id="subject"
+            name="subject"
+            #message="ngModel"
+            [ngClass]="{
+              invalid: message.invalid && message.touched,
+              valid: message.valid
+            }"
+            [placeholder]="message.invalid && message.touched ? (message.errors?.['minlength'] ? 'Message must be at least 10 characters' : 'Message is required') : 'Your Message'"
+          ></textarea>
+          <img
+            *ngIf="message.touched"
+            [src]="message.valid ? './assets/icons/valid.svg' : './assets/icons/invalid.svg'"
+            class="input-icon-textarea"
+            alt="Input Status"
+          />
+        </div>
       </div>
     </div>
-
+  
     <div class="checkbox">
       <div class="centering">
         <input type="checkbox" id="accept-policy" required />
@@ -121,7 +147,8 @@
           processing of my data as outlined.
         </label>
       </div>
-
+      
+  
       <div class="position-button">
         <button
           class="git-hub-btn"
@@ -134,4 +161,5 @@
       </div>
     </div>
   </form>
+  
 </div>
