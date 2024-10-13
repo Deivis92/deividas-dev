@@ -70,6 +70,7 @@
             [(ngModel)]="contactData.name"
             type="text"
             name="name"
+            pattern="^[A-Za-z ]+$"
             id="your-name"
             minlength="2"
             required
@@ -84,12 +85,16 @@
           />
           <img
             *ngIf="name.touched"
-            [src]="name.valid ? './assets/icons/valid.svg' : './assets/icons/invalid.svg'"
+            [src]="
+              name.valid
+                ? './assets/icons/valid.svg'
+                : './assets/icons/invalid.svg'
+            "
             class="input-icon"
             alt="Input Status"
           />
         </div>
-  
+
         <div class="input-container">
           <input
             [(ngModel)]="contactData.email"
@@ -107,13 +112,17 @@
           />
           <img
             *ngIf="email.touched"
-            [src]="email.valid ? './assets/icons/valid.svg' : './assets/icons/invalid.svg'"
+            [src]="
+              email.valid
+                ? './assets/icons/valid.svg'
+                : './assets/icons/invalid.svg'
+            "
             class="input-icon"
             alt="Input Status"
           />
         </div>
       </div>
-      
+
       <div class="text-area">
         <div class="input-container">
           <textarea
@@ -131,35 +140,50 @@
           ></textarea>
           <img
             *ngIf="message.touched"
-            [src]="message.valid ? './assets/icons/valid.svg' : './assets/icons/invalid.svg'"
+            [src]="
+              message.valid
+                ? './assets/icons/valid.svg'
+                : './assets/icons/invalid.svg'
+            "
             class="input-icon-textarea"
             alt="Input Status"
           />
         </div>
       </div>
     </div>
-  
+
     <div class="checkbox">
       <div class="centering">
-        <input type="checkbox" id="accept-policy" required />
+        <input
+          type="checkbox"
+          id="accept-policy"
+          [(ngModel)]="isPolicyAccepted"
+          name="acceptPolicy"
+          required
+        />
         <label for="accept-policy">
           I've read the <a href="#">privacy policy</a> and agree to the
           processing of my data as outlined.
         </label>
       </div>
-      
-  
+
+      <div *ngIf="showPrivacyError">
+        <p class="error-message fade-in-out">
+          Please fill out all fields and accept the privacy policy to proceed.
+        </p>
+      </div>
+
       <div class="position-button">
         <button
           class="git-hub-btn"
           type="submit"
-          [disabled]="contactForm.invalid"
-          value="Submit"
+          [disabled]="contactForm.invalid || !isPolicyAccepted"
+          (mouseover)="showPrivacyError = !isPolicyAccepted"
+          (mouseleave)="showPrivacyError = false"
         >
           Send
         </button>
       </div>
     </div>
   </form>
-  
 </div>

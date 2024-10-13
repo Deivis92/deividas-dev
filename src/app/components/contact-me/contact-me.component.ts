@@ -11,7 +11,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 })
 export class ContactMeComponent {
 
- 
+
 
   contactData = {
     name: "",
@@ -19,14 +19,20 @@ export class ContactMeComponent {
     message: ""
   }
 
+  isPolicyAccepted = false;
+  showPrivacyError = false;
+
 
   onSubmit(ngForm: NgForm) {
+    if (ngForm.valid && this.isPolicyAccepted) {
+      console.log('Form submitted successfully:', this.contactData);
 
-    if (ngForm.valid && ngForm.submitted) {
-      console.log(this.contactData);
-
+    } else if (!this.isPolicyAccepted) {
+      console.log('Privacy policy must be accepted.');
     }
-
   }
-
 }
+
+
+
+
