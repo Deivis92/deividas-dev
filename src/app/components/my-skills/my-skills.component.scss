@@ -16,11 +16,13 @@ h1 {
 
 .skills-container-first {
   display: flex;
+  flex-wrap: wrap;
   gap: 100px;
   margin-bottom: 40px;
 }
 .skills-container-second {
   display: flex;
+  flex-wrap: wrap;
   gap: 100px;
 }
 
