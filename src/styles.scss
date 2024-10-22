@@ -4,16 +4,13 @@
   align-items: center;
 }
 
-
-
 @font-face {
-  font-family: "Roboto-Mono-Medium"; /* The name you want to give the font */
+  font-family: "Roboto-Mono-Medium";
   src: url("../public/assets/fonts/roboto-mono/RobotoMono-Medium.ttf")
-    format("truetype"); /* Path to the font file */
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 
 * {
   box-sizing: border-box;
@@ -35,13 +32,12 @@ body {
   font-family: "Roboto-Mono-Medium", sans-serif;
   display: flex;
   justify-content: center;
- 
 }
 
 .container {
-  width: calc(100% - 280px);
- width: 1440px;
-  margin: 0 auto; /* Use shorthand for left and right margins */
+ 
+  max-width: 1440px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -73,4 +69,3 @@ body {
     color: rgba(2, 244, 191, 1);
   }
 }
-

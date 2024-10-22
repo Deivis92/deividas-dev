@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class WhyMeComponent {
 
   kofferImageUrl: string = './assets/icons/koffer.png';
-  remoteImageUrl: string = '../assets/icons/WiFi.png';
+  remoteImageUrl: string = './assets/icons/WiFi.png';
 
   onKofferHover(isHovered: boolean) {
     this.kofferImageUrl = isHovered ? './assets/icons/koffer-2.png' : './assets/icons/koffer.png';
