@@ -15,48 +15,97 @@
 
     <div class="i-am">
       <div class="content-right-div">
-        
-        
         <div class="top">
           <h2>I am</h2>
           <div class="location">
-            <div class="hover-img"><img class="vector-size" src="./assets/icons/Vector1.png" alt="" />
-              <img class="ring-size" src="./assets/icons/ring-2.png" alt="">
-
+            <div class="hover-img">
+              <img
+                class="vector-size"
+                src="./assets/icons/Vector1.png"
+                alt=""
+              />
+              <img class="ring-size" src="./assets/icons/ring-2.png" alt="" />
             </div>
             <p>located<br />in Bremerhaven</p>
           </div>
         </div>
 
         <div class="middle-div">
-          
-          <img class="arrow-down-size" src="./assets/icons/Arrow-down.png" alt="" />
-          <div class="koffer-text-div" (mouseenter)="onKofferHover(true)" (mouseleave)="onKofferHover(false)">
+          <img
+            class="arrow-down-size"
+            src="./assets/icons/Arrow-down.png"
+            alt=""
+          />
+          <div
+            class="koffer-text-div"
+            (mouseenter)="onKofferHover(true)"
+            (mouseleave)="onKofferHover(false)"
+          >
             <img class="koffer-size" [src]="kofferImageUrl" alt="" />
-            <p>open to<br>relocate</p>
+            <p>open to<br />relocate</p>
           </div>
         </div>
 
         <div class="bottom">
-          <div class="elements-left" (mouseenter)="onRemoteHover(true)" (mouseleave)="onRemoteHover(false)">
+          <div
+            class="elements-left"
+            (mouseenter)="onRemoteHover(true)"
+            (mouseleave)="onRemoteHover(false)"
+          >
             <div>
-              <div class="change-wifi-symbol"><img class="wifi-symbol" [src]="remoteImageUrl" alt="" />
-              <img class="remote-size" src="./assets/icons/remote.png" alt="" /></div> 
-             </div>
-          <p>open to<br>work remote</p>
-          <img src="./assets/icons/ArrowUp.png" alt="">
+              <div class="change-wifi-symbol">
+                <img class="wifi-symbol" [src]="remoteImageUrl" alt="" />
+                <img
+                  class="remote-size"
+                  src="./assets/icons/remote.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p>open to<br />work remote</p>
+            <img src="./assets/icons/ArrowUp.png" alt="" />
+          </div>
+          <img
+            class="arrow-to-button"
+            src="./assets/icons/arrow-to-button.png"
+            alt=""
+          />
         </div>
-          <img class="arrow-to-button" src="./assets/icons/arrow-to-button.png" alt="">
 
+        <div class="button-div">
+          <button class="eletric-button">Let's Talk</button>
         </div>
-
-        <div class="button-div"><button class="eletric-button">Let's Talk</button></div>
-
-
-
-
-
       </div>
     </div>
   </div>
+</div>
+
+<div class="why-me-mobile">
+  <h1>Why me</h1>
+  <p class="p-why-me-mobile">
+    I am motivated to continuosly learn new technologies and develop<br />
+    myself. My ability to solve complex problems and my passion for<br />programming
+    make me a valuable member of your team.
+  </p>
+  <img class="arrow-down-size" src="./assets/icons/Arrow-down.png" alt="" />
+  <h2>I am</h2>
+  <div class="im-list">
+    <div>
+      <img class="vector-size" src="./assets/icons/Vector1.png" />
+      <span>located in Bremerhaven</span>
+    </div>
+    <div>
+      <img src="./assets/icons/koffer.png" />
+      <span>open to relocate</span>
+    </div>
+    <div>
+      <img src="./assets/icons/remote.png" />
+      <span>open to work remote</span>
+    </div>
+  </div>
+  <!-- <img
+            class="arrow-to-button"
+            src="./assets/icons/Arrow-down.png"
+            alt=""
+          /> -->
 </div>
