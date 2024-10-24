@@ -1,13 +1,43 @@
 <header>
-    <div class="header-left">
-        <img src="./assets/icons/_DK_.png">
-        <a>Why me</a>
-        <a>Skills</a>
-        <a>Projects</a>
-        <a>Contact</a>
-    </div>
-    <div class="header-right"><p>DE</p><span class="separator">|</span><p>EN</p></div>
+  <div class="header-left">
+    <img src="./assets/icons/_DK_.png" />
+    <a>Why me</a>
+    <a>Skills</a>
+    <a>Projects</a>
+    <a>Contact</a>
+  </div>
+  <div class="header-right">
+    <p>DE</p>
+    <span class="separator">|</span>
+    <p>EN</p>
+  </div>
 </header>
 
+<nav>
+  <div class="margin-top-22"><img src="./assets/icons/_DK_.png" /></div>
+  <div class="margin-top-22" (click)="toggleMenu()"><img src="./assets/icons/menu-open.svg"/></div>
+</nav>
+
+<div class="menu-mobile" [class.open]="isMenuOpen">
+  <img class="close-icon" src="./assets/icons/menu-close.svg" alt="Close Menue" (click)="toggleMenu()"  />
+
+  <div class="center-content">
+
+  <div class="links-position">
+    <div>
+      <a>Why me</a>
+      <a>Skills</a>
+      <a>Projects</a>
+      <a>Contact</a>
+    </div>
+
+    <div class="language-buttons">
+      <p>DE</p>
+      <span class="separator">|</span>
+      <p>EN</p>
+    </div>
+  </div>
+</div>
+</div>
 
 <!-- https://www.figma.com/design/eqUOC0Fh2PuKwG4x0kUFHh/Portfolio-Group-2?t=8AvndyogOsBy2zTc-0 -->
