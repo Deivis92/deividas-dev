@@ -17,13 +17,8 @@ h1 {
 .skills-container-first {
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
-  margin-bottom: 40px;
-}
-.skills-container-second {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
+  justify-content: center;
+ 
 }
 
 .skills-positioning {
@@ -32,10 +27,12 @@ h1 {
 }
 
 .img-size {
-  height: 150px;
-  width: 150px;
-  @include flex-center;
-  flex: 1;
+  position: relative;
+  img {
+    @include flex-center;
+    flex: 1;
+    margin: 32px;
+  }
 }
 
 .ready-to-learn {
@@ -58,4 +55,91 @@ h1 {
 
 .challenge-me:hover img {
   transform: translateY(5px);
+  text-align: center;
+  color: rgb(2, 244, 191);
+  font-size: 16px;
+}
+
+.challenge-text {
+  position: absolute; // Allows you to position the text exactly where you want
+  left: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  text-align: center;
+  color: rgb(2, 244, 191);
+  font-size: 16px;
+  opacity: 0; // Initially hidden
+  transition: opacity 300ms ease-in-out; // Add transition for opacity
+}
+
+.challenge-text.visible {
+  opacity: 1; // Make it visible when the class is added
+}
+
+.alternative-img {
+  height: 80px; // Specify a fixed height
+  width: 80px;  // Specify a fixed width
+  object-fit: contain; // Ensures the image maintains its aspect ratio
+}
+
+.mobile-challenge-text {
+ width: 100%;
+  p {
+    white-space: nowrap;
+    text-align: center;
+    color: rgb(2, 244, 191);
+    font-size: 16px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+   
+  }
+}
+
+@media (max-width: 1440px) {
+  h1 {
+    font-size: 32px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .skills-positioning {
+    flex-direction: column; // Stack the containers
+    align-items: center; // Center align
+  }
+
+  .skills-container-first {
+    justify-content: center; // Center the first row
+    gap: 0;
+  }
+
+  .img-size {
+    img {
+      height: 80px; // Adjust height for smaller screens
+      width: 80px;
+    } // Adjust width for smaller screens
+    .alternative-img {
+      width: 165px;
+      height: 100px;
+    }
+  }
+
+
+
+  .ready-to-learn {
+    margin-left: 0; // Reset margin
+    padding: 20px; // Add padding for better spacing
+  }
+}
+
+@media (max-width: 950px) {
+  .mobile-challenge-text {
+    p {
+      justify-content: center; /* Center the text on smaller screens */
+    }
+  }
 }
