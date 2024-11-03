@@ -30,22 +30,18 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Roboto-Mono-Medium", sans-serif;
-
-
-
 }
 
 .container {
- 
   max-width: 1440px;
   margin: 0 auto;
   box-sizing: border-box;
 
   @media (max-width: 1440px) {
-  margin: 0 40px;
+    margin: 0 40px;
   }
   @media (max-width: 800px) {
-  margin: 0 16px;
+    margin: 0 16px;
   }
 }
 
@@ -64,7 +60,9 @@ body {
 
   @media (max-width: 800px) {
     font-size: 16px;
-  
+  }
+  @media (max-width: 500px) {
+    padding: 12px 10px;
   }
 }
 
@@ -80,5 +78,13 @@ body {
 
   &:hover {
     color: rgba(2, 244, 191, 1);
+  }
+
+  @media (max-width: 800px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 12px 10px;
   }
 }

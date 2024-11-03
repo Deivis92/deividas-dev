@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Project } from '../../models/project.model'; 
 import { DomSanitizer } from '@angular/platform-browser';
 
@@ -30,6 +30,17 @@ export class MyProjectsComponent {
     },
 
   ];
+
+  isMobileView = false;
+
+  ngOnInit(): void {
+    this.isMobileView = window.innerWidth < 1170;
+  }
+  
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    this.isMobileView = window.innerWidth < 1170;
+  }
 
   constructor(private sanitizer: DomSanitizer) { }
 

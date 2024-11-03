@@ -1,16 +1,43 @@
 <div class="projects-container">
   <h1>My Projects</h1>
 
-  <div *ngFor="let project of projects" class="project">
-    <img
-      [src]="project.image"
-      alt="{{ project.title }} image"
-      class="project-image"
-    />
-    <div class="project-details">
-      <h2>{{ project.title }}</h2>
-      <p>{{ project.skills.join(" | ") }}</p>
-      <p [innerHTML]="getSafeDescription(project.description)"></p>
+  <!-- Desktop layout -->
+  <div *ngIf="!isMobileView">
+    <div *ngFor="let project of projects" class="project">
+      <img
+        [src]="project.image"
+        alt="{{ project.title }} image"
+        class="project-image"
+      />
+      <div class="project-details">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.skills.join(' | ') }}</p>
+        <p [innerHTML]="getSafeDescription(project.description)"></p>
+        <div class="btn-spacing">
+          <button class="git-hub-btn" (click)="openLink(project.githubLink)">
+            GitHub
+          </button>
+          <button class="eletric-button" (click)="openLink(project.websiteLink)">
+            Live Test
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile layout -->
+  <div *ngIf="isMobileView">
+    <div *ngFor="let project of projects" class="project-mobile">
+      <div class="project-details">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.skills.join(' | ') }}</p>
+        <p [innerHTML]="getSafeDescription(project.description)"></p>
+      </div>
+      <img
+        [src]="project.image"
+        alt="{{ project.title }} image"
+        class="project-image"
+      />
       <div class="btn-spacing">
         <button class="git-hub-btn" (click)="openLink(project.githubLink)">
           GitHub
