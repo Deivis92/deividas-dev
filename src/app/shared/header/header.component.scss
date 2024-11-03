@@ -72,16 +72,24 @@ nav {
   background: linear-gradient(180deg, #0B042D 63.5%, rgba(11, 4, 45, 0.2) 118.69%);
  font-weight: 500;
   justify-content: space-between;
-  width: 100%;
+  width: calc(100% + 32px); /* Expands beyond the 100% width */
+  margin-left: -16px;       /* Offsets the expanded width to align with the viewport */
+  margin-right: -16px;
   max-width: 1440px;
   box-sizing: border-box; 
   position: sticky;
   top: 0;
   z-index: 1000;
 
-  .margin-top-22 {
+  .img-left {
     margin-top: 22px;
     cursor: pointer;
+    margin-left: 16px;
+  }
+  .menu-img {
+    margin-top: 22px;
+    cursor: pointer;
+    margin-right: 16px;
   }
 }
 
