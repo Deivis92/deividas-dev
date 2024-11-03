@@ -61,6 +61,11 @@ body {
   &:hover {
     color: rgba(225, 85, 68, 1);
   }
+
+  @media (max-width: 800px) {
+    font-size: 16px;
+  
+  }
 }
 
 .git-hub-btn {
