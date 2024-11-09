@@ -55,3 +55,59 @@
     justify-content: space-evenly;
   }
 }
+
+@media (max-width: 930px) {
+  .arrow-img {
+    display: none; /* Entfernt das Arrow-Bild */
+  }
+
+  .teamplayer {
+    text-align: center;
+
+    h4 {
+      text-align: center;
+    }
+  }
+
+
+  .comments-div {
+    display: flex;
+    overflow-x: auto; /* Ermöglicht horizontales Scrollen */
+  }
+
+  .comment-list {
+    min-width: 250px; 
+    border: 2px solid rgba(2, 244, 191, 1);
+    padding: 10px;
+  }
+
+  .comments-div::-webkit-scrollbar {
+    display: none; /* Versteckt den Scrollbalken in WebKit-Browsern */
+  }
+
+  .comments-div {
+    -ms-overflow-style: none; /* Versteckt den Scrollbalken im IE */
+    scrollbar-width: none; /* Versteckt den Scrollbalken in Firefox */
+  }
+}
+
+@media (max-width: 945px) {
+  .teamplayer h3 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  .smaller-text {
+    font-size: 16px;
+    display: block;
+  }
+
+  .comments-div {
+    gap: 16px;
+  }
+
+  
+}
