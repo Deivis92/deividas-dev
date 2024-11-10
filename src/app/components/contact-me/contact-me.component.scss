@@ -267,3 +267,66 @@ form {
     opacity: 0.6;
   }
 }
+
+@media (max-width: 945px) {
+  .contact {
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+    }
+
+    .title {
+
+      img {
+        display: none;
+      }
+    }
+
+    .spacing-elements {
+      display: none;
+    }
+    
+    .up-arrow {
+      display: none;
+    }
+
+    .text-divs {
+
+      .right {
+        display: none;
+      }
+    
+    .left {
+      width: 100%;
+      text-align: center;
+    }
+  }
+    
+form {
+
+  .contact-block {
+    flex-direction: column;
+
+
+    .inputs-left {
+      width: 100%;
+      align-items: center;
+    }
+    .text-area {
+      width: 95%;
+    }
+
+    .input-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+}
+}
+}
+}
+
+
+  
+
