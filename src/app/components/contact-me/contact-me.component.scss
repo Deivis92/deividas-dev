@@ -204,11 +204,13 @@ form {
       appearance: none;
       -webkit-appearance: none;
       background-color: transparent;
-      width: 24px;
+      width: 24px !important;
       height: 24px;
       cursor: pointer;
       position: relative;
       transition: background-color 75ms ease-out;
+      flex-grow: 0;
+      flex-shrink: 0;
 
       &:hover {
         background-color: rgba(2, 244, 191, 1);
@@ -268,8 +270,27 @@ form {
   }
 }
 
+.up-arrow-mobile {
+  width: 37px;
+  height: 67px;
+  padding: 8px 6px;
+  @include flex-center;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-in-out, fill 300ms ease-in-out;
+  display: none;
+
+  &:hover {
+    box-shadow: 0 0 0 1px rgba(2, 244, 191, 1);
+
+    path {
+      fill: #02f4bf;
+    }
+  }
+}
+
 @media (max-width: 945px) {
   .contact {
+    font-size: 16px;
 
     h1 {
       text-align: center;
@@ -277,7 +298,6 @@ form {
     }
 
     .title {
-
       img {
         display: none;
       }
@@ -286,47 +306,66 @@ form {
     .spacing-elements {
       display: none;
     }
-    
+
     .up-arrow {
       display: none;
     }
 
     .text-divs {
-
       .right {
         display: none;
       }
-    
-    .left {
-      width: 100%;
-      text-align: center;
+
+      .left {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    form {
+      .git-hub-btn {
+        margin-top: 24px;
+      }
+
+      .checkbox {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-block {
+        flex-direction: column;
+        align-items: center;
+
+        .inputs-left {
+          width: 100%;
+          align-items: center;
+        }
+        .text-area {
+          width: 95%;
+        }
+
+        .input-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        input,
+        textarea {
+          padding-right: 0;
+        }
+      }
+
+.arrow-to-left {
+
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+      .up-arrow-mobile {
+        display: block;
+      }
+    }
     }
   }
-    
-form {
-
-  .contact-block {
-    flex-direction: column;
-
-
-    .inputs-left {
-      width: 100%;
-      align-items: center;
-    }
-    .text-area {
-      width: 95%;
-    }
-
-    .input-container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
 }
-}
-}
-}
-
-
-  
-
