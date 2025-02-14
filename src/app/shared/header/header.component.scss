@@ -1,5 +1,10 @@
 @import "../../../../public/styles/mixins.scss";
 
+
+.no-scroll {
+  overflow: hidden;
+}
+
 header {
   color: rgba(225, 85, 68, 1);
   display: flex;
@@ -81,6 +86,8 @@ nav {
   top: 0;
   z-index: 1000;
 
+
+
   .img-left {
     margin-top: 22px;
     cursor: pointer;
@@ -118,7 +125,7 @@ nav {
 .menu-mobile {
   color: rgba(225, 85, 68, 1);
   background-color: aqua;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
