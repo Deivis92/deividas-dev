@@ -1,11 +1,30 @@
 {
   "header": {
-    "WHY_ME": "Warum ich",
-    "SKILLS": "Fähigkeiten",
-    "PROJECTS": "Projekte",
-    "CONTACTS": "Kontakte"
+    "WHY_ME": "Über mich",
+    "SKILLS": "Kompetenzen",
+    "PROJECTS": "Portoflio",
+    "CONTACTS": "Kontakt"
   },
+
+  "about_me": {
+    "TITLE": "FRONTEND ENTWICKLER"
+  },
+
   "why_me": {
-    "TEXT": "Ich bin motiviert, kontinuierlich neue Technologien zu erlernen und mich<br />weiterzuentwickeln. Meine Fähigkeit, komplexe Probleme zu lösen, und meine<br />Leidenschaft für das Programmieren machen mich zu einem wertvollen Mitglied Ihres Teams."
+    "TITLE": "Über mich",
+    "TEXT": "Ich bin motiviert, kontinuierlich neue Technologien zu erlernen und mich<br />weiterzuentwickeln. Meine Fähigkeit, komplexe Probleme zu lösen, und meine<br />Leidenschaft für das Programmieren machen mich<br /> zu einem wertvollen Mitglied Ihres Teams.",
+    "IM": "Ich bin",
+    "LOCATION": "aus Norddeutschland,<br /> Bremerhaven",
+    "RELOCATE": "Flexibel beim<br /> Arbeitsort",
+    "REMOTE": "Bereit für <br /> Home Office<br />",
+    "LOCATION-MOBILE": "aus Norddeutschland, Bremerhaven",
+    "RELOCATE-MOBILE": "Flexibel beim Arbeitsort",
+    "REMOTE-MOBILE": "Bereit für Home Office"
+  
+  },
+
+  "buttons": {
+    "CONTACT": "Kontakt",
+    "LETSTALK": "Kontakt"
   }
 }

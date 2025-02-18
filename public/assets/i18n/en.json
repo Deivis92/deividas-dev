@@ -2,10 +2,28 @@
   "header": {
     "WHY_ME": "Why Me",
     "SKILLS": "Skills",
-    "PROJECTS": "Projects",
-    "CONTACTS": "Contacts"
+    "PROJECTS": "Portoflio",
+    "CONTACTS": "Contact"
   },
+   
+  "about_me": {
+    "TITLE": "FRONTEND DEVELOPER"
+  },
+
   "why_me": {
-    "TEXT": "I am motivated to continuously learn new technologies and develop<br />myself. My ability to solve complex problems and my passion for<br />programming make me a valuable member of your team."
+    "TITLE": "Why Me",
+    "TEXT": "I am motivated to continuously learn new technologies and develop<br />myself. My ability to solve complex problems and my passion for<br />programming make me a valuable member of your team.",
+    "IM": "I am",
+    "LOCATION": "located<br />in Bremerhaven",
+    "RELOCATE": "open to<br />relocate",
+    "REMOTE": "open to<br />work remote",
+    "LOCATION-MOBILE": "located in Bremerhaven",
+    "RELOCATE-MOBILE": "open to relocate",
+    "REMOTE-MOBILE": "open to work remote"
+  },
+  "buttons": {
+    "CONTACT": "Contact me",
+    "LETSTALK": "Let's Talk"
+    
   }
 }

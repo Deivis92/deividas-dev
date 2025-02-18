@@ -5,15 +5,15 @@
 
   <div class="text-div">
     <div class="why-me">
-      <h1>Why ME</h1>
+      <h1>{{ "why_me.TITLE" | translate }}</h1>
       <p class="p-why-me" [innerHTML]="'why_me.TEXT' | translate"></p>
-
     </div>
 
     <div class="i-am">
       <div class="content-right-div">
         <div class="top">
-          <h2>I am</h2>
+          <h2>{{ "why_me.IM" | translate }}</h2>
+
           <div class="location">
             <div class="hover-img">
               <img
@@ -23,7 +23,7 @@
               />
               <img class="ring-size" src="./assets/icons/ring-2.png" alt="" />
             </div>
-            <p>located<br />in Bremerhaven</p>
+            <p [innerHTML]="'why_me.LOCATION' | translate"></p>
           </div>
         </div>
 
@@ -39,7 +39,7 @@
             (mouseleave)="onKofferHover(false)"
           >
             <img class="koffer-size" [src]="kofferImageUrl" alt="" />
-            <p>open to<br />relocate</p>
+            <p [innerHTML]="'why_me.RELOCATE' | translate"></p>
           </div>
         </div>
 
@@ -59,7 +59,7 @@
                 />
               </div>
             </div>
-            <p>open to<br />work remote</p>
+            <p [innerHTML]="'why_me.REMOTE' | translate"></p>
             <img src="./assets/icons/ArrowUp.png" alt="" />
           </div>
           <img
@@ -77,11 +77,6 @@
   </div>
 </div>
 
-
-
-
-
-
 <div class="why-me-mobile">
   <h1>Why me</h1>
   <p class="p-why-me-mobile">
@@ -94,24 +89,25 @@
   <div class="im-list">
     <div>
       <img class="vector-size" src="./assets/icons/Vector1.png" />
-      <span>located in Bremerhaven</span>
+      <span>{{ "why_me.LOCATION-MOBILE" | translate }}</span>
     </div>
     <div>
       <img src="./assets/icons/koffer.png" />
-      <span>open to relocate</span>
+      <span>{{ "why_me.RELOCATE-MOBILE" | translate }}</span>
     </div>
     <div>
       <img src="./assets/icons/remote.png" />
-      <span>open to work remote</span>
+      <span>{{ "why_me.REMOTE-MOBILE" | translate }}</span>
     </div>
   </div>
- <div class="arrow-down-mobile"> <img
-            class="arrow-to-button"
-            src="./assets/icons/arrow-down-left.png"
-            alt=""
-          />
-        </div>
-        <div class="button-div">
-          <button class="eletric-button">Let's Talk</button>
-        </div>
+  <div class="arrow-down-mobile">
+    <img
+      class="arrow-to-button"
+      src="./assets/icons/arrow-down-left.png"
+      alt=""
+    />
+  </div>
+  <div class="button-div">
+    <button class="eletric-button">{{ "buttons.LETSTALK" | translate }}</button>
+  </div>
 </div>
