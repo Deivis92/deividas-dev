@@ -2,10 +2,10 @@
   "header": {
     "WHY_ME": "Why Me",
     "SKILLS": "Skills",
-    "PROJECTS": "Portoflio",
+    "PROJECTS": "My Projects",
     "CONTACTS": "Contact"
   },
-   
+
   "about_me": {
     "TITLE": "FRONTEND DEVELOPER"
   },
@@ -21,9 +21,23 @@
     "RELOCATE-MOBILE": "open to relocate",
     "REMOTE-MOBILE": "open to work remote"
   },
+
   "buttons": {
     "CONTACT": "Contact me",
     "LETSTALK": "Let's Talk"
-    
+  },
+
+  "my_skills": {
+    "TITLE": "My Skills",
+    "CHALLENGE": "I am always happy to learn new<br>technologies, just tell me what you<br>need.",
+    "CHALLENGE-MOBILE": "I am always happy to learn new<br>technologies, just tell me what you<br>need."
+  },
+
+  "my_projects": {
+    "TITLE": "My Projects"
+  },
+
+  "projects_text": {
+    "description_join": "Task manager inspired by the Kanban System.\nCreate and organize tasks using drag and drop functions, assign users and categories."
   }
 }

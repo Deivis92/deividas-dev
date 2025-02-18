@@ -20,11 +20,24 @@
     "LOCATION-MOBILE": "aus Norddeutschland, Bremerhaven",
     "RELOCATE-MOBILE": "Flexibel beim Arbeitsort",
     "REMOTE-MOBILE": "Bereit für Home Office"
-  
   },
 
   "buttons": {
     "CONTACT": "Kontakt",
     "LETSTALK": "Kontakt"
+  },
+
+  "my_skills": {
+    "TITLE": "Kompetenzen",
+    "CHALLENGE": "Ich freue mich immer, neue<br>Technologien zu lernen, sagen Sie mir einfach, was Sie<br>brauchen.",
+    "CHALLENGE-MOBILE": "Ich freue mich immer, neue<br>Technologien zu lernen, sagen Sie mir einfach, was Sie<br>brauchen."
+  },
+
+  "my_projects": {
+    "TITLE": "Portfolio"
+  },
+
+  "projects_text": {
+    "description_join": "Task-Manager inspiriert vom Kanban-System.Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu."
   }
 }

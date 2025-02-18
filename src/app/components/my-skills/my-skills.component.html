@@ -1,5 +1,5 @@
 <div class="my-skills">
-  <h1>My Skills</h1>
+  <h1>{{ "my_skills.TITLE" | translate }}</h1>
 
   <div class="skills-positioning">
     <div class="skills-container-first">
@@ -13,20 +13,21 @@
                alt="Skill image" />
                <span *ngIf="!isMobileView && imageUrl.includes('challenge-me.png')"
                class="challenge-text"
-               [ngClass]="{ 'visible': isChallengeHovered }">
-           I am always happy to learn new<br>technologies, just tell me what you<br>need.
+               [ngClass]="{ 'visible': isChallengeHovered }"
+               [innerHTML]="'my_skills.CHALLENGE' | translate">
          </span>
+         
         </div>
       </div>
     </div>
 
 
     <div class="mobile-challenge-text" *ngIf="isMobileView">
-      <p>I am always happy to learn new<br>technologies, just tell me what you<br>need.<p>
+      <p [innerHTML]="'my_skills.CHALLENGE-MOBILE' | translate"></p>
     </div>
 
     <div class="button-div" *ngIf="isMobileView">
-      <button class="eletric-button">Let's Talk</button>
+      <button class="eletric-button">{{ "buttons.LETSTALK" | translate }}</button>
     </div>
 
   </div>
