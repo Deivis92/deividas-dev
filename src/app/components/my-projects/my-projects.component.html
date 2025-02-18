@@ -12,7 +12,7 @@
       <div class="project-details">
         <h2>{{ project.title }}</h2>
         <p>{{ project.skills.join(' | ') }}</p>
-        <p [innerHTML]="getSafeDescription(project.description)"></p>
+        <p [innerHTML]="(project.description | translate)"></p>
         <div class="btn-spacing">
           <button class="git-hub-btn" (click)="openLink(project.githubLink)">
             GitHub

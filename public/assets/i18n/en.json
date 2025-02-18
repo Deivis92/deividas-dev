@@ -38,6 +38,7 @@
   },
 
   "projects_text": {
-    "description_join": "Task manager inspired by the Kanban System.\nCreate and organize tasks using drag and drop functions, assign users and categories."
+    "description_join": "Task manager inspired by the Kanban System.\nCreate and organize tasks using drag and drop functions, assign users and categories.",
+    "description_game": "Jump, run and throw game based on object-\noriented approach. Help Pepe to find coins\nand tabasco salsa to fight against the crazy\nhen."
   }
 }

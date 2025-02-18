@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { Project } from '../../models/project.model'; 
 import { DomSanitizer } from '@angular/platform-browser';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-my-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './my-projects.component.html',
   styleUrl: './my-projects.component.scss'
 })
@@ -16,7 +17,7 @@ export class MyProjectsComponent {
       image: './assets/img/join.png',
       title: 'Join',
       skills: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
-      description: "Task manager inspired by the Kanban System.\nCreate and organize tasks using drag and drop\nfunctions, assign users and categories.",
+      description: 'projects_text.description_join', 
       githubLink: 'https://github.com/Deivis92/Join-Deivis.git',
       websiteLink: 'https://join-276.developerakademie.net/src/pages/login.html'
     },
@@ -24,7 +25,7 @@ export class MyProjectsComponent {
       image: './assets/img/el-pollo.png',
       title: 'El Pollo Loco',
       skills: ['JavaScript', 'HTML', 'CSS'],
-      description: 'Jump, run and throw game based on object-\noriented approach. Help Pepe to find coins\nand tabasco salsa to fight against the crazy\nhen.',
+      description: 'projects_text.description_game',
       githubLink: 'https://github.com/user/project-two',
       websiteLink: 'https://deividas-kondratjevas.developerakademie.net/elPolloLocoDeivis/index.html'
     },

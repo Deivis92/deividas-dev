@@ -38,6 +38,7 @@
   },
 
   "projects_text": {
-    "description_join": "Task-Manager inspiriert vom Kanban-System.Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu."
+    "description_join": "Task-Manager inspiriert vom Kanban-System.Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+    "description_game": "Springen, laufen und werfen – ein Spiel basierend auf einem objekt-\norientierten Ansatz. Hilf Pepe, Münzen\nund Tabasco-Salsa zu finden, um gegen die verrückte\nHenne zu kämpfen."
   }
 }

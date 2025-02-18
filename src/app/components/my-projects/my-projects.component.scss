@@ -43,6 +43,15 @@
   
   .project:nth-of-type(2) {
     flex-direction: row-reverse; /* Reverse the order of items for the second project */
+    
+    .project-details {
+        margin-left: 0; /* Adjust for reversed layout */
+        margin-right: 40px; /* Add margin to the right for the second project */
+    }
+}
+
+  .project-details {
+    margin-left: 40px;
   }
 
 //   .project-details {
