@@ -4,5 +4,8 @@
     "SKILLS": "Skills",
     "PROJECTS": "Projects",
     "CONTACTS": "Contacts"
+  },
+  "why_me": {
+    "TEXT": "I am motivated to continuously learn new technologies and develop<br />myself. My ability to solve complex problems and my passion for<br />programming make me a valuable member of your team."
   }
 }
