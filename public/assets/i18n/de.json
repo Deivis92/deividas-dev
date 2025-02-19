@@ -25,7 +25,7 @@
   "buttons": {
     "CONTACT": "Kontakt",
     "LETSTALK": "Kontakt",
-     "TEST": "Testen"
+    "TEST": "Testen"
   },
 
   "my_skills": {
@@ -49,5 +49,22 @@
     "JOIN": "\"Deividas musste Inhalte entwickeln, formatieren und in Zusammenarbeit mit dem Team liefern. Er ist eine zuverlässige und freundliche Person.\"",
     "LOCO": "\"Er ist ein vertrauenswürdiger Teamplayer und kann mit dem Stress von Deadlines umgehen. Strukturiertes Arbeiten und sauberer Code.\"",
     "DABUBLE": "\"Er ist zuverlässig und freundlich. Arbeitet strukturiert und schreibt sauberen Code. Ich empfehle ihn als Kollegen.\""
+  },
+
+  "contact": {
+    "H1": "Kontakt",
+    "TEXT": "Sind Sie noch nicht sicher, ob ich die richtige Person für Ihr Projekt bin?<br /> Kontaktieren Sie mich, damit ich Sie beruhigen kann.Lassen Sie uns zusammenarbeiten.",
+    "YOUR_NAME": "Ihr Name",
+    "NAME_REQUIRED": "Name ist erforderlich",
+    "YOUR_EMAIL": "Ihre E-Mail",
+    "EMAIL_REQUIRED": "E-Mail ist erforderlich",
+    "ENTER_VALID_EMAIL": "Geben Sie eine gültige E-Mail-Adresse ein",
+    "YOUR_MESSAGE": "Ihre Nachricht",
+    "MESSAGE_REQUIRED": "Nachricht ist erforderlich",
+    "MESSAGE_MIN_LENGTH": "Nachricht muss mindestens 10 Zeichen lang sein",
+    "PRIVACY_POLICY": "Ich habe die <a class='privacy-link' href='#'>Datenschutzerklärung</a> gelesen und stimme der Datenverarbeitung zu.",
+    "ERROR_MESSAGE": "Bitte fülle alle Felder aus und akzeptiere die Datenschutzerklärung."
+
+
   }
 }

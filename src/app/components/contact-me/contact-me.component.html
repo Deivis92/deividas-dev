@@ -1,14 +1,14 @@
 <div class="contact">
   <div class="title">
-    <h1>Contact me <img src="./assets/icons/contactArrow.png" /></h1>
+    <h1>
+      {{ "contact.H1" | translate }}
+      <img src="./assets/icons/contactArrow.png" />
+    </h1>
   </div>
 
   <div class="text-divs">
     <div class="left">
-      <p>
-        Still not sure if I am the right person for<br />your project? Contact
-        me so I can reassure<br />you. Let us work together
-      </p>
+      <p [innerHTML]="'contact.TEXT' | translate"></p>
     </div>
     <div class="right">
       <div>
@@ -80,8 +80,10 @@
               valid: name.valid
             }"
             [placeholder]="
-              name.invalid && name.touched ? 'Name is required' : 'Your Name'
-            "
+            name.invalid && name.touched 
+            ? ('contact.NAME_REQUIRED' | translate) 
+            : ('contact.YOUR_NAME' | translate)
+          "
           />
           <img
             *ngIf="name.touched"
@@ -108,8 +110,14 @@
               invalid: email.invalid && email.touched,
               valid: email.valid
             }"
-            [placeholder]="email.invalid && email.touched ? (email.errors?.['pattern'] ? 'Enter a valid email' : 'Email is required') : 'Your Email'"
-          />
+          [placeholder]="
+          email.invalid && email.touched
+          ? (email.errors?.['pattern']
+              ? ('contact.ENTER_VALID_EMAIL' | translate)
+              : ('contact.EMAIL_REQUIRED' | translate))
+          : ('contact.YOUR_EMAIL' | translate)
+        "
+      />
           <img
             *ngIf="email.touched"
             [src]="
@@ -136,7 +144,13 @@
               invalid: message.invalid && message.touched,
               valid: message.valid
             }"
-            [placeholder]="message.invalid && message.touched ? (message.errors?.['minlength'] ? 'Message must be at least 10 characters' : 'Message is required') : 'Your Message'"
+            [placeholder]="
+            message.invalid && message.touched
+            ? (message.errors?.['minlength']
+                ? ('contact.MESSAGE_MIN_LENGTH' | translate)
+                : ('contact.MESSAGE_REQUIRED' | translate))
+            : ('contact.YOUR_MESSAGE' | translate)
+          "
           ></textarea>
           <img
             *ngIf="message.touched"
@@ -161,15 +175,13 @@
           name="acceptPolicy"
           required
         />
-        <label for="accept-policy">
-          I've read the <a href="#">privacy policy</a> and agree to the
-          processing of my data as outlined.
-        </label>
+        <label for="accept-policy" [innerHTML]="'contact.PRIVACY_POLICY' | translate"></label>
+
       </div>
 
       <div *ngIf="showPrivacyError">
         <p class="error-message fade-in-out">
-          Please fill out all fields and accept the privacy policy to proceed.
+          {{ 'contact.ERROR_MESSAGE' | translate }}
         </p>
       </div>
 

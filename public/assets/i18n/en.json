@@ -49,5 +49,21 @@
     "JOIN": "\"Deividas had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person.\"",
     "LOCO": "\"He is a trustworthy team player and can cope with the stress of deadlines. Structured work and clear code.\"",
     "DABUBLE": "\"He is a reliable and friendly person. Works in a structured way and writes clear code. I recommend him as a colleague.\""
+  },
+
+  "contact": {
+    "H1": "Contact me",
+    "TEXT": "Still not sure if I am the right person for your project? Contact me so I can reassure you.<br />Let us work together",
+    "YOUR_NAME": "Your Name",
+    "NAME_REQUIRED": "Name is required",
+    "YOUR_EMAIL": "Your Email",
+    "EMAIL_REQUIRED": "Email is required",
+    "ENTER_VALID_EMAIL": "Enter a valid email",
+    "YOUR_MESSAGE": "Your Message",
+    "MESSAGE_REQUIRED": "Message is required",
+    "MESSAGE_MIN_LENGTH": "Message must be at least 10 characters",
+    "PRIVACY_POLICY": "I've read the <a class='privacy-link' href='#'>privacy policy</a> and agree to the processing of my data as outlined.",
+    "ERROR_MESSAGE": "Please fill out all fields and accept the privacy policy to proceed."
+    
   }
 }
