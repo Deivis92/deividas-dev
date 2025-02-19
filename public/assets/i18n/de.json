@@ -24,7 +24,8 @@
 
   "buttons": {
     "CONTACT": "Kontakt",
-    "LETSTALK": "Kontakt"
+    "LETSTALK": "Kontakt",
+     "TEST": "Testen"
   },
 
   "my_skills": {
@@ -40,5 +41,13 @@
   "projects_text": {
     "description_join": "Task-Manager inspiriert vom Kanban-System.Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
     "description_game": "Springen, laufen und werfen – ein Spiel basierend auf einem objekt-\norientierten Ansatz. Hilf Pepe, Münzen\nund Tabasco-Salsa zu finden, um gegen die verrückte\nHenne zu kämpfen."
+  },
+
+  "teamplayer": {
+    "H3": "Brauchen Sie einen Teamplayer?",
+    "SMALLER": "Hier ist, was meine Kollegen über mich gesagt haben.",
+    "JOIN": "\"Deividas musste Inhalte entwickeln, formatieren und in Zusammenarbeit mit dem Team liefern. Er ist eine zuverlässige und freundliche Person.\"",
+    "LOCO": "\"Er ist ein vertrauenswürdiger Teamplayer und kann mit dem Stress von Deadlines umgehen. Strukturiertes Arbeiten und sauberer Code.\"",
+    "DABUBLE": "\"Er ist zuverlässig und freundlich. Arbeitet strukturiert und schreibt sauberen Code. Ich empfehle ihn als Kollegen.\""
   }
 }
