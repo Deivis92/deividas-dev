@@ -11,14 +11,17 @@
       />
       <div class="project-details">
         <h2>{{ project.title }}</h2>
-        <p>{{ project.skills.join(' | ') }}</p>
-        <p [innerHTML]="(project.description | translate)"></p>
+        <p>{{ project.skills.join(" | ") }}</p>
+        <p [innerHTML]="project.description | translate"></p>
         <div class="btn-spacing">
           <button class="git-hub-btn" (click)="openLink(project.githubLink)">
             GitHub
           </button>
-          <button class="eletric-button" (click)="openLink(project.websiteLink)">
-            Live Test
+          <button
+            class="eletric-button"
+            (click)="openLink(project.websiteLink)"
+          >
+          {{ "buttons.TEST" | translate }}
           </button>
         </div>
       </div>
@@ -30,8 +33,8 @@
     <div *ngFor="let project of projects" class="project-mobile">
       <div class="project-details">
         <h2>{{ project.title }}</h2>
-        <p>{{ project.skills.join(' | ') }}</p>
-        <p [innerHTML]="getSafeDescription(project.description)"></p>
+        <p>{{ project.skills.join(" | ") }}</p>
+        <p [innerHTML]="project.description | translate"></p>
       </div>
       <img
         [src]="project.image"
@@ -43,7 +46,7 @@
           GitHub
         </button>
         <button class="eletric-button" (click)="openLink(project.websiteLink)">
-          Live Test
+          {{ "buttons.TEST" | translate }}
         </button>
       </div>
     </div>

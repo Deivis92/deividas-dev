@@ -34,6 +34,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Roboto-Mono-Medium", sans-serif;
+  touch-action: pan-y;
 }
 
 .container {

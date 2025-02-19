@@ -1,5 +1,5 @@
 <div class="teamplayer">
-  <h3>Need a team player?<span class="smaller-text"> Here's what my colleagues said about me</span></h3>
+  <h3>{{ "teamplayer.H3" | translate }}<span class="smaller-text">{{ "teamplayer.SMALLER" | translate }}</span></h3>
 
   <div class="comments">
     <img
@@ -11,7 +11,7 @@
       <div class="comment-list" *ngFor="let comment of comments">
         <h4>{{ comment.name }}</h4>
         <p class="title">{{ comment.title }}</p>
-        <p>''{{ comment.description }}''</p>
+        <p [innerHTML]="comment.description | translate"></p>
       </div>
     </div>
   </div>

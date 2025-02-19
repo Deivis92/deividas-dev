@@ -24,7 +24,8 @@
 
   "buttons": {
     "CONTACT": "Contact me",
-    "LETSTALK": "Let's Talk"
+    "LETSTALK": "Let's Talk",
+    "TEST": "Live Test"
   },
 
   "my_skills": {
@@ -40,5 +41,13 @@
   "projects_text": {
     "description_join": "Task manager inspired by the Kanban System.\nCreate and organize tasks using drag and drop functions, assign users and categories.",
     "description_game": "Jump, run and throw game based on object-\noriented approach. Help Pepe to find coins\nand tabasco salsa to fight against the crazy\nhen."
+  },
+
+  "teamplayer": {
+    "H3": "Need a team player?",
+    "SMALLER": "Here's what my colleagues said about me",
+    "JOIN": "\"Deividas had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person.\"",
+    "LOCO": "\"He is a trustworthy team player and can cope with the stress of deadlines. Structured work and clear code.\"",
+    "DABUBLE": "\"He is a reliable and friendly person. Works in a structured way and writes clear code. I recommend him as a colleague.\""
   }
 }

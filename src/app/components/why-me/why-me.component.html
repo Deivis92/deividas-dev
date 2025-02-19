@@ -70,7 +70,7 @@
         </div>
 
         <div class="button-div">
-          <button class="eletric-button">Let's Talk</button>
+          <button class="eletric-button">{{ "buttons.LETSTALK" | translate }}</button>
         </div>
       </div>
     </div>
@@ -79,11 +79,7 @@
 
 <div class="why-me-mobile">
   <h1>Why me</h1>
-  <p class="p-why-me-mobile">
-    I am motivated to continuosly learn new technologies and develop<br />
-    myself. My ability to solve complex problems and my passion for<br />programming
-    make me a valuable member of your team.
-  </p>
+  <p class="p-why-me-mobile" [innerHTML]="'why_me.TEXT' | translate"></p>
   <img class="arrow-down-size" src="./assets/icons/Arrow-down.png" alt="" />
   <h2>I am</h2>
   <div class="im-list">
