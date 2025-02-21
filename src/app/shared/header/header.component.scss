@@ -152,6 +152,7 @@ nav {
   a {
     display: flex;
     flex-direction: column;
+    
   }
 
   .center-content {
@@ -175,6 +176,16 @@ nav {
       margin-bottom: 47px;
       font-size: 18px;
       cursor: pointer;
+      text-decoration: none;
+      color: rgba(225, 85, 68, 1);
+
+      &:visited {
+        color: rgba(225, 85, 68, 1); // Gleiche Farbe wie normale Links
+      }
+    
+      &:hover {
+        color: rgba(2, 244, 191, 1); // Hover-Farbe
+      }
     }
   
   }

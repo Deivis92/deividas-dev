@@ -6,6 +6,10 @@
   overflow: hidden; // Prevent overflow if content exceeds the max height
   margin-bottom: 100px;
 
+  a {
+    text-decoration: none;
+  }
+
   @media (max-width: 1250px) {
     display: none; // Hide .why-me-container on screens smaller than 1250px
   }
@@ -195,6 +199,10 @@
 .why-me-mobile {
 
   display: none; // Hide by default on larger screens
+
+  a {
+    text-decoration: none;
+  }
 
   @media (max-width: 1250px) {
     display: block; // Show .why-me-mobile on screens smaller than 1250px

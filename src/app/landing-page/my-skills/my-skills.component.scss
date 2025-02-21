@@ -24,6 +24,10 @@ h1 {
 .skills-positioning {
   display: flex;
   flex-direction: column;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .img-size {
