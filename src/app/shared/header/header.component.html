@@ -14,7 +14,9 @@
 </header>
 
 <nav>
-  <div class="img-left"><img src="./assets/icons/_DK_.png" /></div>
+  <div class="img-left">
+    <a href="#"><img src="./assets/icons/_DK_.png" /></a>
+  </div>
   <div class="menu-img" (click)="toggleMenu()">
     <img src="./assets/icons/menu-open.svg" />
   </div>
@@ -31,10 +33,18 @@
   <div class="center-content">
     <div class="links-position">
       <div>
-        <a href="#why-me">{{ "header.WHY_ME" | translate }}</a>
-        <a href="#skills">{{ "header.SKILLS" | translate }}</a>
-        <a href="#projects">{{ "header.PROJECTS" | translate }}</a>
-        <a href="#contact">{{ "header.CONTACTS" | translate }}</a>
+        <a href="#why-me" (click)="toggleMenu()">{{
+          "header.WHY_ME" | translate
+        }}</a>
+        <a href="#skills" (click)="toggleMenu()">{{
+          "header.SKILLS" | translate
+        }}</a>
+        <a href="#projects" (click)="toggleMenu()">{{
+          "header.PROJECTS" | translate
+        }}</a>
+        <a href="#contact" (click)="toggleMenu()">{{
+          "header.CONTACTS" | translate
+        }}</a>
       </div>
 
       <div class="language-buttons">
