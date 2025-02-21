@@ -2,17 +2,13 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { AboutMeComponent } from './components/about-me/about-me.component';
-import { WhyMeComponent } from './components/why-me/why-me.component';
-import { MySkillsComponent } from './components/my-skills/my-skills.component';
-import { MyProjectsComponent } from './components/my-projects/my-projects.component';
-import { TeamplayerComponent } from './components/teamplayer/teamplayer.component';
-import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { MainContentComponent } from './landing-page/main-content/main-content.component';
+import { ImprintComponent } from './imprint/imprint/imprint.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, AboutMeComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, TeamplayerComponent, ContactMeComponent],
+  imports: [RouterOutlet, HeaderComponent, MainContentComponent, FooterComponent, ImprintComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

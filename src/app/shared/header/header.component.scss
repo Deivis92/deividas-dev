@@ -34,9 +34,15 @@ header {
     cursor: pointer;
     margin-left: 32px;
     transition: color 100ms ease-out;
-
+    text-decoration: none;
+    color: rgba(225, 85, 68, 1); // Standardfarbe für Links
+  
+    &:visited {
+      color: rgba(225, 85, 68, 1); // Gleiche Farbe wie normale Links
+    }
+  
     &:hover {
-      color: rgba(2, 244, 191, 1);
+      color: rgba(2, 244, 191, 1); // Hover-Farbe
     }
   }
 
