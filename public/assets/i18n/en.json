@@ -65,5 +65,9 @@
     "PRIVACY_POLICY": "I've read the <a class='privacy-link' href='#'>privacy policy</a> and agree to the processing of my data as outlined.",
     "ERROR_MESSAGE": "Please fill out all fields and accept the privacy policy to proceed."
     
+  },
+  "footer": {
+    "LEGAL_NOTICE": "Imprint",
+    "PRIVACY_POLICY": "Privacy Policy"
   }
 }

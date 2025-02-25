@@ -64,7 +64,10 @@
     "MESSAGE_MIN_LENGTH": "Nachricht muss mindestens 10 Zeichen lang sein",
     "PRIVACY_POLICY": "Ich habe die <a class='privacy-link' href='#'>Datenschutzerklärung</a> gelesen und stimme der Datenverarbeitung zu.",
     "ERROR_MESSAGE": "Bitte fülle alle Felder aus und akzeptiere die Datenschutzerklärung."
+  },
 
-
+  "footer": {
+    "LEGAL_NOTICE": "Impressum",
+    "PRIVACY_POLICY": "Datenschutz"
   }
 }

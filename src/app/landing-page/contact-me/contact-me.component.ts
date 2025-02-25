@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -11,6 +12,8 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact-me.component.scss'
 })
 export class ContactMeComponent {
+
+  http = inject(HttpClient);
 
 
 
