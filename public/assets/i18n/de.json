@@ -69,5 +69,15 @@
   "footer": {
     "LEGAL_NOTICE": "Impressum",
     "PRIVACY_POLICY": "Datenschutz"
+  },
+
+  "IMPRESSUM": {
+    "TITLE": "Impressum",
+    "NAME": "Deividas Kondratjevas",
+    "ADDRESS": "Eichenweg 1",
+    "KONTAKT": "Kontakt",
+    "PHONE": "Telefon",
+    "EMAIL": "E-Mail",
+    "SOURCE": "Quelle"
   }
 }

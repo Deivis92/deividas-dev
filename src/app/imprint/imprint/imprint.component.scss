@@ -1,0 +1,19 @@
+.imprint {
+  color: rgba(2, 244, 191, 1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  text-align: left;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(2, 244, 191, 1);
+  }
+}
