@@ -26,7 +26,7 @@ export class ContactMeComponent {
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'http://deividas-kondratjevas.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -43,6 +43,9 @@ export class ContactMeComponent {
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
       if (this.isPolicyAccepted && !this.mailTest) {
+        // Log the contactData being sent
+        console.log('Daten, die gesendet werden:', this.contactData);
+        
         // Wenn das Formular gültig ist und die Datenschutzrichtlinie akzeptiert wurde,
         // sende die POST-Anfrage an den Server
         this.http.post(this.post.endPoint, this.post.body(this.contactData))
@@ -67,6 +70,7 @@ export class ContactMeComponent {
       }
     }
   }
+  
 }
   
 
