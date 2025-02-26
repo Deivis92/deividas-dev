@@ -15,13 +15,11 @@ export class ContactMeComponent {
 
   http = inject(HttpClient);
 
-
-
   contactData = {
     name: "",
     email: "",
     message: ""
-  }
+  };
 
   mailTest = true;
 
@@ -39,40 +37,31 @@ export class ContactMeComponent {
   isPolicyAccepted = false;
   showPrivacyError = false;
 
-
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid) {
-      if (this.isPolicyAccepted && !this.mailTest) {
-        // Log the contactData being sent
-        console.log('Daten, die gesendet werden:', this.contactData);
-        
-        // Wenn das Formular gültig ist und die Datenschutzrichtlinie akzeptiert wurde,
-        // sende die POST-Anfrage an den Server
-        this.http.post(this.post.endPoint, this.post.body(this.contactData))
-          .subscribe({
-            next: (response) => {
-              // Formular nach erfolgreichem Senden zurücksetzen
-              ngForm.resetForm();
-            },
-            error: (error) => {
-              console.error('Fehler beim Senden:', error);
-            },
-            complete: () => {
-              console.info('POST-Anfrage abgeschlossen');
-            }
-          });
-      } else if (this.mailTest) {
-        // Wenn die Mail-Testbedingung zutrifft, setze das Formular zurück
-        ngForm.resetForm();
-      } else if (!this.isPolicyAccepted) {
-        // Falls die Datenschutzrichtlinie nicht akzeptiert wurde
-        console.log('Die Datenschutzrichtlinie muss akzeptiert werden.');
-      }
+    if (ngForm.valid && this.isPolicyAccepted) {
+      const formData = {
+        name: this.contactData.name,
+        email: this.contactData.email,
+        message: this.contactData.message
+      };
+
+     
+      console.log('Sending form data:', formData);
+
+      this.http.post(this.post.endPoint, this.post.body(formData), this.post.options)
+        .subscribe({
+          next: response => {
+            console.log('Form successfully submitted:', response);
+          },
+          error: error => {
+            console.error('Error during form submission:', error);
+          },
+          complete: () => {
+            console.log('Request completed.');
+          }
+        });
+    } else if (!this.isPolicyAccepted) {
+      console.log('Privacy policy must be accepted.');
     }
   }
-  
 }
-  
-
-
-
