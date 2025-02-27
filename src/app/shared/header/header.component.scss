@@ -1,6 +1,5 @@
 @import "../../../../public/styles/mixins.scss";
 
-
 .no-scroll {
   overflow: hidden;
 }
@@ -9,90 +8,91 @@ header {
   color: rgba(225, 85, 68, 1);
   display: flex;
   height: 92px;
-  background: linear-gradient(180deg, #0B042D 63.5%, rgba(11, 4, 45, 0.2) 118.69%);
- font-weight: 500;
+  background: linear-gradient(
+    180deg,
+    #0b042d 63.5%,
+    rgba(11, 4, 45, 0.2) 118.69%
+  );
+  font-weight: 500;
   justify-content: space-between;
   width: 100%;
   max-width: 1440px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   position: sticky;
   top: 0;
   z-index: 1000;
 
- 
+  .header-left {
+    display: flex;
+    font-size: 22px;
+    @include flex-center;
 
+    min-width: 0;
 
-.header-left {
-  display: flex;
-  font-size: 22px;
-  @include flex-center;
- 
-  min-width: 0;
-  
+    a {
+      cursor: pointer;
+      margin-left: 32px;
+      transition: color 100ms ease-out;
+      text-decoration: none;
+      color: rgba(225, 85, 68, 1); // Standardfarbe für Links
 
-  a {
-    cursor: pointer;
-    margin-left: 32px;
-    transition: color 100ms ease-out;
-    text-decoration: none;
-    color: rgba(225, 85, 68, 1); // Standardfarbe für Links
-  
-    &:visited {
-      color: rgba(225, 85, 68, 1); // Gleiche Farbe wie normale Links
+      &:visited {
+        color: rgba(225, 85, 68, 1); // Gleiche Farbe wie normale Links
+      }
+
+      &:hover {
+        color: rgba(2, 244, 191, 1); // Hover-Farbe
+      }
     }
-  
-    &:hover {
-      color: rgba(2, 244, 191, 1); // Hover-Farbe
-    }
-  }
 
-  img {
-    width: 92;
-    height: 44px;
-    object-fit: cover;
-    cursor: pointer;
-  }
-}
-.header-right {
-  @include flex-center;
-  font-size: 18px;
-  font-weight: 700;
- 
-  min-width: 0;
-
-  p {
-    cursor: pointer;
-    transition: color 300ms ease-out;
-
-    &:hover {
-      color: rgba(2, 244, 191, 1);
+    img {
+      width: 92;
+      height: 44px;
+      object-fit: cover;
+      cursor: pointer;
     }
   }
+  .header-right {
+    @include flex-center;
+    font-size: 18px;
+    font-weight: 700;
 
-  .separator {
-    margin: 0 6px;
+    min-width: 0;
+
+    p {
+      cursor: pointer;
+      transition: color 300ms ease-out;
+
+      &:hover {
+        color: rgba(2, 244, 191, 1);
+      }
+    }
+
+    .separator {
+      margin: 0 6px;
+    }
   }
-}
-
 }
 
 nav {
   color: rgba(225, 85, 68, 1);
   display: flex;
   height: 92px;
-  background: linear-gradient(180deg, #0B042D 63.5%, rgba(11, 4, 45, 0.2) 118.69%);
- font-weight: 500;
+  background: linear-gradient(
+    180deg,
+    #0b042d 63.5%,
+    rgba(11, 4, 45, 0.2) 118.69%
+  );
+  font-weight: 500;
   justify-content: space-between;
   width: calc(100% + 32px); /* Expands beyond the 100% width */
-  margin-left: -16px;       /* Offsets the expanded width to align with the viewport */
+  margin-left: -16px; /* Offsets the expanded width to align with the viewport */
   margin-right: -16px;
   max-width: 1440px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   position: sticky;
   top: 0;
   z-index: 1000;
-
-
 
   .img-left {
     margin-top: 22px;
@@ -116,7 +116,6 @@ nav {
   }
 }
 
-
 @media (min-width: 800px) {
   nav {
     display: none;
@@ -126,7 +125,6 @@ nav {
     display: flex;
   }
 }
-
 
 .menu-mobile {
   color: rgba(225, 85, 68, 1);
@@ -138,7 +136,11 @@ nav {
   width: 100%;
   height: 100vh;
   z-index: 9999;
-  background: linear-gradient(180deg, #13074E 46.5%, rgba(29, 10, 121, 0.95) 91%);
+  background: linear-gradient(
+    180deg,
+    #13074e 46.5%,
+    rgba(29, 10, 121, 0.95) 91%
+  );
   text-align: center;
   opacity: 0;
   visibility: hidden;
@@ -152,26 +154,21 @@ nav {
   a {
     display: flex;
     flex-direction: column;
-    
   }
 
   .center-content {
     height: 100vh;
     @include flex-center;
   }
-  
-  
-
 
   .close-icon {
-    position:absolute;
+    position: absolute;
     right: 16px;
-    top:22px;
+    top: 22px;
     cursor: pointer;
   }
 
   .links-position {
-
     a {
       margin-bottom: 47px;
       font-size: 18px;
@@ -182,12 +179,11 @@ nav {
       &:visited {
         color: rgba(225, 85, 68, 1); // Gleiche Farbe wie normale Links
       }
-    
+
       &:hover {
         color: rgba(2, 244, 191, 1); // Hover-Farbe
       }
     }
-  
   }
 
   .language-buttons {
@@ -203,4 +199,3 @@ nav {
     }
   }
 }
-
