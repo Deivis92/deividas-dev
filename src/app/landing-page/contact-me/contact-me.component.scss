@@ -1,5 +1,7 @@
 @import "../../../../public/styles/mixins.scss";
 
+‚
+
 .contact {
   margin-bottom: 120px;
 
@@ -397,4 +399,13 @@ form {
       color: rgba(2, 244, 191, 1);
     }
   }
+}
+.snack-bar-success {
+  background-color: green;
+  color: white;
+}
+
+.snack-bar-error {
+  background-color: red;
+  color: white;
 }

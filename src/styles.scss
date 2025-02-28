@@ -104,3 +104,26 @@ body {
     padding: 12px 10px;
   }
 }
+
+.success {
+  background-color: green;
+  color: white;
+}
+
+.mat-mdc-simple-snack-bar {
+  display: flex;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: green;
+  border-radius: 5px;
+}
+
+.mdc-snackbar {
+  opacity: 1;
+  display: flex;
+  position: absolute;
+  top: 128px;
+  transform: translateX(-50%) !important;
+  left: 50%;
+}
