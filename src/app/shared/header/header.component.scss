@@ -106,7 +106,7 @@ nav {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   header {
     display: none;
   }
@@ -116,7 +116,7 @@ nav {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 920px) {
   nav {
     display: none;
   }
@@ -125,6 +125,8 @@ nav {
     display: flex;
   }
 }
+
+
 
 .menu-mobile {
   color: rgba(225, 85, 68, 1);
@@ -199,3 +201,4 @@ nav {
     }
   }
 }
+
