@@ -185,8 +185,9 @@
         </p>
       </div>
 
-      <div class="position-button"  (click)="showSnackBar('Thank you for your message. I will get back to you shortly.', 'success')">
+      <div class="position-button">
         <button
+          (click)="showSnackBar('Thank you for your message. I will get back to you shortly.', 'success')"
           class="git-hub-btn"
           type="submit"
           [disabled]="contactForm.invalid || !isPolicyAccepted"
