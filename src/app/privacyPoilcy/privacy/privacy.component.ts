@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -8,6 +8,9 @@ import { RouterModule } from '@angular/router';
   templateUrl: './privacy.component.html',
   styleUrl: './privacy.component.scss'
 })
-export class PrivacyComponent {
 
+export class PrivacyComponent implements OnInit {
+  ngOnInit() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
