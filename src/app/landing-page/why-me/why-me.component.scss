@@ -37,7 +37,8 @@
   width: 40%;
   background-image: url("../../../../public/assets/img/temporar-why.png");
   object-fit: cover; /* Adjusts the size to cover the entire element */
-  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  
 
   img {
     max-width: 100%; // Prevent the image from exceeding the width of its container

@@ -20,7 +20,7 @@
     position: relative;
     margin-top: 350px;
   }
-  
+
   a {
     text-decoration: none;
   }
@@ -68,10 +68,10 @@
 
 .content-right {
   display: flex;
+  align-items: flex-end;
 
   img {
-    object-fit: cover;
-    width: 100%;
+    max-height: 590px;
   }
 }
 
@@ -92,70 +92,123 @@
   }
 }
 
-@media (max-width: 1300px) {
-  .about-me {
-    flex-direction: column-reverse;
-    align-items: center;
-    margin-bottom: 0;
-    margin-top: -100px;
-  }
 
-  .arrow {
-    display: none;
-  }
+@media (max-width: 1480px) {
+  
+    .about-me {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-bottom: 0;
+      margin-top: -100px;
+    }
 
-  .contact-me-btn {
-    display: none;
-  }
+    .content-left {
+      
+     h2 {
+      font-size: 40px;
+     }
 
-  .content-right {
-    display: flex;
-    justify-content: center;
-  }
+     h1 {
+      font-size: 50px;
+     }
 
-  .content-left {
-    align-items: center;
-    text-align: center;
-    .buttons {
+     .name-title {
+      text-align: center;
+     }
+
+      .buttons {
       display: none;
+      }
+    }
+  
+    
+
+    
+
+      .arrow {
+        display: none;
+      }
+  
+      .contact-me-btn {
+        display: none;
+      }
+  
+      .content-right {
+        display: flex;
+        justify-content: center;
+
+        img {
+          height: 60vh;
+          margin-left: 40px;
+        }
+      }
+}
+
+@media (max-width: 1300px) {
+     
+    .about-me {
+      margin-top: -3opx;
     }
 
-    .name-title {
-      h1 {
-        font-size: 44px;
+    .content-left {
+      align-items: center;
+      text-align: center;
+      .buttons {
+        display: none;
       }
 
+      .name-title {
+        h1 {
+          font-size: 44px;
+        }
+
+        h2 {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 920px) {
+
+    .about-me {
+
+      margin-top: -10px;
       h2 {
         font-size: 28px;
       }
-    }
-  }
-}
 
-@media (max-width: 550px) {
-  .content-left {
-    .name-title {
       h1 {
-        font-size: 32px;
-      }
-
-      h2 {
-        font-size: 28px;
+        font-size: 36px !important;
       }
     }
   }
-}
 
-@media (max-width: 390px) {
-  .content-left {
-    .name-title {
-      h1 {
-        font-size: 22px; // Should apply at max-width 350px
-      }
+  @media (max-width: 550px) {
+    .content-left {
+      .name-title {
+        h1 {
+          font-size: 32px;
+        }
 
-      h2 {
-        font-size: 22px; // This should also apply
+        h2 {
+          font-size: 28px;
+        }
       }
     }
   }
-}
+
+  @media (max-width: 390px) {
+    .content-left {
+      .name-title {
+        h1 {
+          font-size: 22px; // Should apply at max-width 350px
+        }
+
+        h2 {
+          font-size: 22px; // This should also apply
+        }
+      }
+    }
+  }
+
