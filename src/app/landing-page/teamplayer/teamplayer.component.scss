@@ -1,5 +1,4 @@
 .teamplayer {
-
   margin-bottom: 120px;
   h3 {
     font-size: 24px;
@@ -21,14 +20,12 @@
     display: flex;
     width: 100%;
     margin-top: 55px;
-
   }
 
   .comment-list {
     width: 25%;
     display: flex;
     flex-direction: column;
-    
   }
 
   .arrow-img {
@@ -42,7 +39,6 @@
     margin-block-end: 1em;
     font-size: 18px;
     color: rgba(2, 244, 191, 1);
-    
   }
 
   p {
@@ -58,7 +54,7 @@
 
 @media (max-width: 930px) {
   .arrow-img {
-    display: none; /* Entfernt das Arrow-Bild */
+    display: none;
   }
 
   .teamplayer {
@@ -69,25 +65,24 @@
     }
   }
 
-
   .comments-div {
     display: flex;
-    overflow-x: auto; /* Ermöglicht horizontales Scrollen */
+    overflow-x: auto;
   }
 
   .comment-list {
-    min-width: 250px; 
+    min-width: 250px;
     border: 2px solid rgba(2, 244, 191, 1);
     padding: 10px;
   }
 
   .comments-div::-webkit-scrollbar {
-    display: none; /* Versteckt den Scrollbalken in WebKit-Browsern */
+    display: none;
   }
 
   .comments-div {
-    -ms-overflow-style: none; /* Versteckt den Scrollbalken im IE */
-    scrollbar-width: none; /* Versteckt den Scrollbalken in Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 
@@ -108,6 +103,4 @@
   .comments-div {
     gap: 16px;
   }
-
-  
 }
