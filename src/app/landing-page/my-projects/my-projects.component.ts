@@ -26,7 +26,7 @@ export class MyProjectsComponent {
       title: 'El Pollo Loco',
       skills: ['JavaScript', 'HTML', 'CSS'],
       description: 'projects_text.description_game',
-      githubLink: 'https://github.com/user/project-two',
+      githubLink: 'https://github.com/Deivis92/El-Pollo-Loco-Deivis.git',
       websiteLink: 'https://deividas-kondratjevas.developerakademie.net/elPolloLocoDeivis/index.html'
     },
 
