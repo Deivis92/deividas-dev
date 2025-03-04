@@ -18,7 +18,7 @@ export class WhyMeComponent {
     this.kofferImageUrl = isHovered ? './assets/icons/koffer-2.png' : './assets/icons/koffer.png';
   }
 
-  // Hover methods for Remote image
+
   onRemoteHover(isHovered: boolean) {
     this.remoteImageUrl = isHovered ? './assets/icons/WiFi2.png' : './assets/icons/WiFi.png';
   }

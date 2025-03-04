@@ -2,8 +2,8 @@
 
 .why-me-container {
   width: 100%;
-  display: flex; // Use flexbox to layout children
-  overflow: hidden; // Prevent overflow if content exceeds the max height
+  display: flex;
+  overflow: hidden;
   margin-bottom: 100px;
 
   a {
@@ -11,7 +11,7 @@
   }
 
   @media (max-width: 1250px) {
-    display: none; // Hide .why-me-container on screens smaller than 1250px
+    display: none;
   }
 
   h1 {
@@ -36,14 +36,13 @@
   flex: 1;
   width: 40%;
   background-image: url("../../../../public/assets/img/temporar-why.png");
-  object-fit: cover; /* Adjusts the size to cover the entire element */
+  object-fit: cover;
   background-repeat: no-repeat;
-  
 
   img {
-    max-width: 100%; // Prevent the image from exceeding the width of its container
-    max-height: 100%; // Prevent the image from exceeding the height of its container
-    object-fit: cover; // Maintain aspect ratio while covering the area
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -96,7 +95,7 @@
         transition: transform 120ms ease-in-out;
       }
       &:hover .vector-size {
-        transform: translateY(-2px); // Moves the image 2 pixels up
+        transform: translateY(-2px);
       }
 
       &:hover .ring-size {
@@ -186,8 +185,7 @@
   margin-top: 16px;
 
   @media (max-width: 800px) {
-   justify-content: center;
-  
+    justify-content: center;
   }
 }
 
@@ -198,18 +196,14 @@
 }
 
 .why-me-mobile {
-
-  display: none; // Hide by default on larger screens
-
+  display: none;
   a {
     text-decoration: none;
   }
 
   @media (max-width: 1250px) {
-    display: block; // Show .why-me-mobile on screens smaller than 1250px
+    display: block;
   }
-
-
 
   h1 {
     font-size: 32px;
