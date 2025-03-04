@@ -19,7 +19,10 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
+
 }
+
 
 body {
   background: linear-gradient(
@@ -127,3 +130,23 @@ body {
   transform: translateX(-50%) !important;
   left: 50%;
 }
+
+::-webkit-scrollbar {
+  width: 4px; 
+  height: 4px; 
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(2, 244, 191, 1); 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(225, 85, 68, 1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(2, 244, 191, 0.8); 
+}
+
