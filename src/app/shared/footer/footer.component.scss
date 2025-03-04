@@ -20,8 +20,8 @@ footer {
     }
 
     a {
-        all: unset;
-        cursor: pointer;
+      all: unset;
+      cursor: pointer;
     }
 
     .positioning-name {
@@ -47,19 +47,16 @@ footer {
     display: flex;
     justify-content: center;
     gap: 18px;
-   
-
 
     a {
-        all: unset;
-        cursor: pointer;
+      all: unset;
+      cursor: pointer;
     }
 
     p {
-        color: rgba(225, 85, 68, 1);
-        font-size: 14px;
-        letter-spacing: 1px;
-       
+      color: rgba(225, 85, 68, 1);
+      font-size: 14px;
+      letter-spacing: 1px;
     }
   }
 }
@@ -79,51 +76,36 @@ footer {
     align-items: center;
     justify-content: center;
     margin-bottom: 36px;
-    
   }
 
   .bottom-mobile {
-    
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    
-   
-
 
     a {
-        all: unset;
-        cursor: pointer;
+      all: unset;
+      cursor: pointer;
     }
 
     p {
-        color: rgba(225, 85, 68, 1);
-        font-size: 14px;
-        letter-spacing: 1px;
-        margin-block-start: 0;
-        margin-block-end: 0;
-       
-       
+      color: rgba(225, 85, 68, 1);
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-block-start: 0;
+      margin-block-end: 0;
     }
   }
-
- 
-   
-  
-
-
 }
-
 
 @media (max-width: 700px) {
   .desktop-footer {
     display: none !important;
-    
   }
 
   .mobile-footer {
-    display: block; 
+    display: block;
     display: flex;
     justify-content: center;
     margin-top: 38px;
@@ -134,4 +116,3 @@ footer {
     padding-bottom: 24px !important;
   }
 }
-
