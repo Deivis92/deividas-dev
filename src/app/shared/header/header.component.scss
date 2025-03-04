@@ -26,7 +26,6 @@ header {
     display: flex;
     font-size: 22px;
     @include flex-center;
-
     min-width: 0;
 
     a {
@@ -56,7 +55,6 @@ header {
     @include flex-center;
     font-size: 18px;
     font-weight: 700;
-
     min-width: 0;
 
     p {
@@ -85,8 +83,8 @@ nav {
   );
   font-weight: 500;
   justify-content: space-between;
-  width: calc(100% + 32px); /* Expands beyond the 100% width */
-  margin-left: -16px; /* Offsets the expanded width to align with the viewport */
+  width: calc(100% + 32px);
+  margin-left: -16px;
   margin-right: -16px;
   max-width: 1440px;
   box-sizing: border-box;
@@ -125,8 +123,6 @@ nav {
     display: flex;
   }
 }
-
-
 
 .menu-mobile {
   color: rgba(225, 85, 68, 1);
@@ -179,11 +175,11 @@ nav {
       color: rgba(225, 85, 68, 1);
 
       &:visited {
-        color: rgba(225, 85, 68, 1); // Gleiche Farbe wie normale Links
+        color: rgba(225, 85, 68, 1);
       }
 
       &:hover {
-        color: rgba(2, 244, 191, 1); // Hover-Farbe
+        color: rgba(2, 244, 191, 1);
       }
     }
   }
@@ -201,4 +197,3 @@ nav {
     }
   }
 }
-
