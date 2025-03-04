@@ -23,7 +23,7 @@ export class MySkillsComponent {
     './assets/skills-img/scrum.png',
     './assets/skills-img/material-design.png',
     './assets/skills-img/challenge-me.png'
-    
+
   ];
 
 
@@ -42,12 +42,8 @@ export class MySkillsComponent {
   onMouseOverChallenge(): void {
     this.isChallengeHovered = true;
   }
-  
+
   onMouseOutChallenge(): void {
     this.isChallengeHovered = false;
   }
-
-
-
-
 }

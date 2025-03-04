@@ -4,31 +4,56 @@
   <div class="skills-positioning">
     <div class="skills-container-first">
       <div *ngFor="let imageUrl of skillImagesFirstRow; let i = index">
-        <div class="img-size"
-             [ngClass]="{ 'challenge-me': imageUrl.includes('challenge-me.png') && !isMobileView }"
-             (mouseover)="!isMobileView && imageUrl.includes('challenge-me.png') ? onMouseOverChallenge() : null"
-             (mouseout)="!isMobileView && imageUrl.includes('challenge-me.png') ? onMouseOutChallenge() : null">
-          <img [src]="i === skillImagesFirstRow.length - 1 && isMobileView ? './assets/icons/challenge-arrow.png' : imageUrl"
-               [ngClass]="{ 'alternative-img': i === skillImagesFirstRow.length - 1 && isMobileView }" 
-               alt="Skill image" />
-               <span *ngIf="!isMobileView && imageUrl.includes('challenge-me.png')"
-               class="challenge-text"
-               [ngClass]="{ 'visible': isChallengeHovered }"
-               [innerHTML]="'my_skills.CHALLENGE' | translate">
-         </span>
-         
+        <div
+          class="img-size"
+          [ngClass]="{
+            'challenge-me':
+              imageUrl.includes('challenge-me.png') && !isMobileView
+          }"
+          (mouseover)="
+            !isMobileView && imageUrl.includes('challenge-me.png')
+              ? onMouseOverChallenge()
+              : null
+          "
+          (mouseout)="
+            !isMobileView && imageUrl.includes('challenge-me.png')
+              ? onMouseOutChallenge()
+              : null
+          "
+        >
+          <img
+            [src]="
+              i === skillImagesFirstRow.length - 1 && isMobileView
+                ? './assets/icons/challenge-arrow.png'
+                : imageUrl
+            "
+            [ngClass]="{
+              'alternative-img':
+                i === skillImagesFirstRow.length - 1 && isMobileView
+            }"
+            alt="Skill image"
+          />
+          <span
+            *ngIf="!isMobileView && imageUrl.includes('challenge-me.png')"
+            class="challenge-text"
+            [ngClass]="{ visible: isChallengeHovered }"
+            [innerHTML]="'my_skills.CHALLENGE' | translate"
+          >
+          </span>
         </div>
       </div>
     </div>
-
 
     <div class="mobile-challenge-text" *ngIf="isMobileView">
       <p [innerHTML]="'my_skills.CHALLENGE-MOBILE' | translate"></p>
     </div>
 
     <div class="button-div" *ngIf="isMobileView">
-      <a href="#contact"><button class="eletric-button">{{ "buttons.LETSTALK" | translate }}</button></a>
+      <a href="#contact"
+        ><button class="eletric-button">
+          {{ "buttons.LETSTALK" | translate }}
+        </button></a
+      >
     </div>
-
   </div>
 </div>

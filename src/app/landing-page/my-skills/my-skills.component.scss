@@ -18,7 +18,6 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
- 
 }
 
 .skills-positioning {
@@ -65,7 +64,7 @@ h1 {
 }
 
 .challenge-text {
-  position: absolute; // Allows you to position the text exactly where you want
+  position: absolute;
   left: 110%;
   top: 50%;
   transform: translateY(-50%);
@@ -73,22 +72,22 @@ h1 {
   text-align: center;
   color: rgb(2, 244, 191);
   font-size: 16px;
-  opacity: 0; // Initially hidden
-  transition: opacity 300ms ease-in-out; // Add transition for opacity
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
 }
 
 .challenge-text.visible {
-  opacity: 1; // Make it visible when the class is added
+  opacity: 1;
 }
 
 .alternative-img {
-  height: 80px; // Specify a fixed height
-  width: 80px;  // Specify a fixed width
-  object-fit: contain; // Ensures the image maintains its aspect ratio
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
 }
 
 .mobile-challenge-text {
- width: 100%;
+  width: 100%;
   p {
     white-space: nowrap;
     text-align: center;
@@ -99,7 +98,6 @@ h1 {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 20px;
-   
   }
 }
 
@@ -112,38 +110,35 @@ h1 {
   }
 
   .skills-positioning {
-    flex-direction: column; // Stack the containers
-    align-items: center; // Center align
+    flex-direction: column;
+    align-items: center;
   }
 
   .skills-container-first {
-    justify-content: center; // Center the first row
-    gap: 0;
+    justify-content: center;
   }
 
   .img-size {
     img {
-      height: 80px; // Adjust height for smaller screens
+      height: 80px;
       width: 80px;
-    } // Adjust width for smaller screens
+    }
     .alternative-img {
       width: 165px;
       height: 100px;
     }
   }
 
-
-
   .ready-to-learn {
-    margin-left: 0; // Reset margin
-    padding: 20px; // Add padding for better spacing
+    margin-left: 0;
+    padding: 20px;
   }
 }
 
 @media (max-width: 950px) {
   .mobile-challenge-text {
     p {
-      justify-content: center; /* Center the text on smaller screens */
+      justify-content: center;
     }
   }
 }
