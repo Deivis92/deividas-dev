@@ -1,8 +1,7 @@
 @import "../../../../public/styles/mixins.scss";
 
 .projects-container {
-    margin-bottom: 100px;
-
+  margin-bottom: 100px;
 
   h1 {
     font-size: 54px;
@@ -40,23 +39,23 @@
     justify-content: space-between;
     width: 100%;
   }
-  
+
   .project:nth-of-type(2) {
     flex-direction: row-reverse; /* Reverse the order of items for the second project */
-    
+
     .project-details {
-        margin-left: 0; /* Adjust for reversed layout */
-        margin-right: 40px; /* Add margin to the right for the second project */
+      margin-left: 0; /* Adjust for reversed layout */
+      margin-right: 40px; /* Add margin to the right for the second project */
     }
-}
+  }
 
   .project-details {
     margin-left: 40px;
   }
 
-//   .project-details {
-    
-//   }
+  //   .project-details {
+
+  //   }
 
   .btn-spacing {
     display: flex;
@@ -65,8 +64,11 @@
 }
 
 @media (max-width: 1170px) {
-
   .projects-container {
+    .project-details {
+      margin: 0;
+    }
+
     h1 {
       font-size: 32px;
     }
@@ -78,8 +80,6 @@
     justify-content: center;
     align-items: center;
 
-   
-
     p {
       text-align: center;
       margin-bottom: 32px;
@@ -89,7 +89,6 @@
     h2 {
       text-align: center;
       font-size: 24px;
-
     }
 
     .project-image {
@@ -105,3 +104,8 @@
   }
 }
 
+@media (max-width: 1170px) {
+  .project-mobile p {
+    font-size: 16px;
+  }
+}
