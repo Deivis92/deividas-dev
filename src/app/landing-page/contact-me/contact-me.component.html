@@ -70,8 +70,8 @@
             [(ngModel)]="contactData.name"
             type="text"
             name="name"
-            pattern="^[A-Za-zÀ-ÖØ-öø-ÿ]+( [A-Za-zÀ-ÖØ-öø-ÿ]+)*$"
-            (keydown.space)="$event.preventDefault()"
+            pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$"
+            (ngModelChange)="contactData.name = $event.trim()"
             id="your-name"
             minlength="2"
             required
@@ -139,7 +139,6 @@
             [(ngModel)]="contactData.message"
             minlength="10"
             required
-            (keydown.space)="$event.preventDefault()"
             id="subject"
             name="subject"
             #message="ngModel"

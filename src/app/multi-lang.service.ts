@@ -20,7 +20,6 @@ export class MultiLangService {
       const lang = this.languageSignal();
       window.localStorage.setItem('languageSignal', lang);
       this.translateService.use(lang);
-      console.log('Language changed to:', lang);
     });
   }
 }
