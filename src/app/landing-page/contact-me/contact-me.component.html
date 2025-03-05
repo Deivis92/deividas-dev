@@ -1,19 +1,19 @@
-<div class="contact">
-  <div class="title">
+<div class="contact" data-aos="fade-up">
+  <div class="title" data-aos="fade-right">
     <h1>
       {{ "contact.H1" | translate }}
       <img src="./assets/icons/contactArrow.png" />
     </h1>
   </div>
 
-  <div class="text-divs">
-    <div class="left">
+  <div class="text-divs" data-aos="fade-left">
+    <div class="left" data-aos="fade-right">
       <p [innerHTML]="'contact.TEXT' | translate"></p>
     </div>
-    <div class="right">
+    <div class="right" data-aos="fade-left">
       <div>
         <div class="spacing-elements">
-          <a href="mailto:deividaskond@gmail.com" class="email">
+          <a href="mailto:deividaskond@gmail.com" class="email" data-aos="zoom-in">
             <svg
               width="25"
               height="20"
@@ -29,7 +29,7 @@
             <p>Email: deividaskond&#64;gmail.com</p>
           </a>
 
-          <a href="tel:01643473624" class="phone">
+          <a href="tel:01643473624" class="phone" data-aos="zoom-in">
             <svg
               width="27"
               height="31"
@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-    <a href="#"><svg
+    <a href="#" data-aos="fade-up"><svg
       class="up-arrow"
       width="22"
       height="50"
@@ -63,7 +63,7 @@
   </div>
 
   <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-    <div class="contact-block">
+    <div class="contact-block" data-aos="fade-up">
       <div class="inputs-left">
         <div class="input-container">
           <input

@@ -1,14 +1,19 @@
-<div class="teamplayer">
-  <h3>{{ "teamplayer.H3" | translate }}<span class="smaller-text">{{ "teamplayer.SMALLER" | translate }}</span></h3>
+<div class="teamplayer" data-aos="fade-up">
+  <h3>
+    {{ "teamplayer.H3" | translate }}
+    <span class="smaller-text">{{ "teamplayer.SMALLER" | translate }}</span>
+  </h3>
 
-  <div class="comments">
+  <div class="comments" data-aos="fade-up" data-aos-delay="200">
     <img
       class="arrow-img"
       src="./assets/icons/teamArrow.png"
       alt="Team Arrow Icon"
+      data-aos="zoom-in"
+      data-aos-delay="400"
     />
     <div class="comments-div">
-      <div class="comment-list" *ngFor="let comment of comments">
+      <div class="comment-list" *ngFor="let comment of comments" data-aos="fade-up" data-aos-delay="600">
         <h4>{{ comment.name }}</h4>
         <p class="title">{{ comment.title }}</p>
         <p [innerHTML]="comment.description | translate"></p>

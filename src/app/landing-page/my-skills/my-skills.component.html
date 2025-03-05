@@ -1,8 +1,8 @@
-<div class="my-skills">
+<div class="my-skills" data-aos="fade-up">
   <h1>{{ "my_skills.TITLE" | translate }}</h1>
 
   <div class="skills-positioning">
-    <div class="skills-container-first">
+    <div class="skills-container-first" data-aos="zoom-in">
       <div *ngFor="let imageUrl of skillImagesFirstRow; let i = index">
         <div
           class="img-size"
@@ -20,6 +20,7 @@
               ? onMouseOutChallenge()
               : null
           "
+          data-aos="fade-up"
         >
           <img
             [src]="
@@ -44,11 +45,11 @@
       </div>
     </div>
 
-    <div class="mobile-challenge-text" *ngIf="isMobileView">
+    <div class="mobile-challenge-text" *ngIf="isMobileView" data-aos="fade-up">
       <p [innerHTML]="'my_skills.CHALLENGE-MOBILE' | translate"></p>
     </div>
 
-    <div class="button-div" *ngIf="isMobileView">
+    <div class="button-div" *ngIf="isMobileView" data-aos="zoom-in">
       <a href="#contact"
         ><button class="eletric-button">
           {{ "buttons.LETSTALK" | translate }}

@@ -1,15 +1,15 @@
-<div class="why-me-container">
-  <div class="photo-left"></div>
+<div class="why-me-container" data-aos="fade-up">
+  <div class="photo-left" data-aos="fade-left"></div>
 
-  <div class="text-div">
+  <div class="text-div" data-aos="fade-right">
     <div class="why-me">
       <h1>{{ "why_me.TITLE" | translate }}</h1>
       <p class="p-why-me" [innerHTML]="'why_me.TEXT' | translate"></p>
     </div>
 
-    <div class="i-am">
+    <div class="i-am" data-aos="zoom-in">
       <div class="content-right-div">
-        <div class="top">
+        <div class="top" data-aos="fade-down">
           <h2>{{ "why_me.IM" | translate }}</h2>
 
           <div class="location">
@@ -25,7 +25,7 @@
           </div>
         </div>
 
-        <div class="middle-div">
+        <div class="middle-div" data-aos="fade-up">
           <img
             class="arrow-down-size"
             src="./assets/icons/Arrow-down.png"
@@ -41,7 +41,7 @@
           </div>
         </div>
 
-        <div class="bottom">
+        <div class="bottom" data-aos="flip-left">
           <div
             class="elements-left"
             (mouseenter)="onRemoteHover(true)"
@@ -68,23 +68,23 @@
         </div>
 
         <div class="button-div">
-          <a href="#contact"
-            ><button class="eletric-button">
+          <a href="#contact">
+            <button class="eletric-button">
               {{ "buttons.LETSTALK" | translate }}
-            </button></a
-          >
+            </button>
+          </a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="why-me-mobile">
+<div class="why-me-mobile" data-aos="fade-up">
   <h1>Why me</h1>
   <p class="p-why-me-mobile" [innerHTML]="'why_me.TEXT' | translate"></p>
   <img class="arrow-down-size" src="./assets/icons/Arrow-down.png" alt="" />
   <h2>I am</h2>
-  <div class="im-list">
+  <div class="im-list" data-aos="zoom-in">
     <div>
       <img class="vector-size" src="./assets/icons/Vector1.png" />
       <span>{{ "why_me.LOCATION-MOBILE" | translate }}</span>
@@ -106,10 +106,10 @@
     />
   </div>
   <div class="button-div">
-    <a href="#contact"
-      ><button class="eletric-button">
+    <a href="#contact">
+      <button class="eletric-button">
         {{ "buttons.LETSTALK" | translate }}
-      </button></a
-    >
+      </button>
+    </a>
   </div>
 </div>
