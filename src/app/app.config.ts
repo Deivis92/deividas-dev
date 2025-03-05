@@ -7,6 +7,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {TranslateModule, TranslateLoader} from "@ngx-translate/core";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common'; 
 
 
 
@@ -21,6 +22,7 @@ export const appConfig: ApplicationConfig = {
         useFactory: httpLoaderFactory,
         deps: [HttpClient],
       },
-    })]), provideAnimationsAsync()
+    })]), provideAnimationsAsync(),
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ]
 };

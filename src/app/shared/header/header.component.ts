@@ -29,11 +29,6 @@ export class HeaderComponent {
   toggleLanguage(language: string): void {
     if (this.multiLangService.languageSignal() !== language) {
       this.multiLangService.updateLanguage(language);
-      console.log('Language changed to', language);
     }
   }
-  
-
-
- 
 }

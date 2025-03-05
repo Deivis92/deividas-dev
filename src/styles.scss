@@ -37,6 +37,7 @@ body {
   background-attachment: fixed;
   font-family: "Roboto-Mono-Medium", sans-serif;
   touch-action: pan-y;
+  overflow-x: hidden; 
 }
 
 .privacy-link {
@@ -147,3 +148,5 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(2, 244, 191, 0.8);
 }
+
+
