@@ -3,7 +3,7 @@
 
   <div class="skills-positioning">
     <div class="skills-container-first" data-aos="zoom-in">
-      <div *ngFor="let imageUrl of skillImagesFirstRow; let i = index">
+      <div *ngFor="let imageUrl of (isSmallScreen ? skillImagesSecondRow : skillImagesFirstRow); let i = index">
         <div
           class="img-size"
           [ngClass]="{
@@ -50,11 +50,11 @@
     </div>
 
     <div class="button-div" *ngIf="isMobileView" data-aos="zoom-in">
-      <a href="#contact"
-        ><button class="eletric-button">
+      <a href="#contact">
+        <button class="eletric-button">
           {{ "buttons.LETSTALK" | translate }}
-        </button></a
-      >
+        </button>
+      </a>
     </div>
   </div>
 </div>

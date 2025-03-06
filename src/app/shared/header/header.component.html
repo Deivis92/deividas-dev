@@ -1,11 +1,12 @@
 <header>
   <div class="header-left">
     <a href="#"><img src="./assets/icons/_DK_.png" /></a>
-    <a href="#why-me">{{ "header.WHY_ME" | translate }}</a>
-    <a href="#skills">{{ "header.SKILLS" | translate }}</a>
-    <a href="#projects">{{ "header.PROJECTS" | translate }}</a>
-    <a href="#contact">{{ "header.CONTACTS" | translate }}</a>
+    <a href="#" (click)="scrollToSection($event, 'why-me')">{{ "header.WHY_ME" | translate }}</a>
+    <a href="#" (click)="scrollToSection($event, 'skills')">{{ "header.SKILLS" | translate }}</a>
+    <a href="#" (click)="scrollToSection($event, 'projects')">{{ "header.PROJECTS" | translate }}</a>
+    <a href="#" (click)="scrollToSection($event, 'contact')">{{ "header.CONTACTS" | translate }}</a>
   </div>
+  
   <div class="header-right">
     <p (click)="toggleLanguage('de')">DE</p>
     <span class="separator">|</span>
@@ -33,16 +34,16 @@
   <div class="center-content">
     <div class="links-position">
       <div>
-        <a href="#why-me" (click)="toggleMenu()">{{
+        <a href="#" (click)="toggleMenu()" (click)="scrollToSection($event, 'why-me')">{{
           "header.WHY_ME" | translate
         }}</a>
-        <a href="#skills" (click)="toggleMenu()">{{
+        <a href="#" (click)="toggleMenu()" (click)="scrollToSection($event, 'skills')">{{
           "header.SKILLS" | translate
         }}</a>
-        <a href="#projects" (click)="toggleMenu()">{{
+        <a href="#" (click)="toggleMenu()" (click)="scrollToSection($event, 'projects')">{{
           "header.PROJECTS" | translate
         }}</a>
-        <a href="#contact" (click)="toggleMenu()">{{
+        <a href="#" (click)="toggleMenu()" (click)="scrollToSection($event, 'contact')">{{
           "header.CONTACTS" | translate
         }}</a>
       </div>

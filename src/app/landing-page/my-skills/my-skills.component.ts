@@ -23,20 +23,38 @@ export class MySkillsComponent {
     './assets/skills-img/scrum.png',
     './assets/skills-img/material-design.png',
     './assets/skills-img/challenge-me.png'
-
   ];
 
+  skillImagesSecondRow = [
+    './assets/skills-img/angular-mobile.png',
+    './assets/skills-img/ts-mobile.png',
+    './assets/skills-img/js-mobile.png',
+    './assets/skills-img/html-mobile.png',
+    './assets/skills-img/css-mobile.png',
+    './assets/skills-img/Api-mobile.png',
+    './assets/skills-img/firebase-mobile.png',
+    './assets/skills-img/git-mobile.png',
+    './assets/skills-img/scrum-mobile.png',
+    './assets/skills-img/material-mobile.png',
+    './assets/skills-img/challenge-me.png'
+  ];
 
   isChallengeHovered = false;
   isMobileView = false;
+  isSmallScreen = false;
 
   ngOnInit(): void {
-    this.isMobileView = window.innerWidth < 1250;
+    this.updateScreenSize();
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: Event): void {
+  onResize(): void {
+    this.updateScreenSize();
+  }
+
+  updateScreenSize(): void {
     this.isMobileView = window.innerWidth < 1250;
+    this.isSmallScreen = window.innerWidth < 660;
   }
 
   onMouseOverChallenge(): void {
