@@ -54,7 +54,7 @@ export class MySkillsComponent {
 
   updateScreenSize(): void {
     this.isMobileView = window.innerWidth < 1250;
-    this.isSmallScreen = window.innerWidth < 660;
+    this.isSmallScreen = window.innerWidth < 780;
   }
 
   onMouseOverChallenge(): void {
