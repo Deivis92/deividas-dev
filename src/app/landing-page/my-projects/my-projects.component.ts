@@ -19,7 +19,7 @@ export class MyProjectsComponent {
       skills: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
       description: 'projects_text.description_join', 
       githubLink: 'https://github.com/Deivis92/Join-Deivis.git',
-      websiteLink: 'https://join-276.developerakademie.net/src/pages/login.html'
+      websiteLink: 'https://deividas-kondratjevas.developerakademie.net/Join-Deivis/pages/index.html'
     },
     {
       image: './assets/img/el-pollo.png',
